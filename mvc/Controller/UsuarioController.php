@@ -2,16 +2,6 @@
 
 class UsuarioController extends Controller{
     
-    public function __call($m,$a){
-        $this->view->renderizar("erro");
-    }
-    
-    public function cadastro(){
-        $this->view->renderizar("cadastro");
-    }
-    public function news(){
-        $this->view->renderizar("news");
-    }
     
      public function admin(){
         $id = $_GET["arg0"];
@@ -28,10 +18,6 @@ class UsuarioController extends Controller{
     
 
     
-    public function sucesso(){
-        $this->view->renderizar("sucesso");
-    }
-    
     public function inserir(){
         //OBTEM DA VIEW
         $nome = $_POST["nome"];
@@ -44,7 +30,24 @@ class UsuarioController extends Controller{
         //PASSA AO MODEL
         $ret = $userDao->insert($usuario);
         if($ret === ""){
-            header("Location: /usuario/sucesso");    
+            header("Location: /home/sucesso");    
+        }else{
+            $this->view->interpolar("errosql",$ret);
+        }
+        
+    }
+    public function inserirContato(){
+        //OBTEM DA VIEW
+        $nome = $_POST["nome"];
+        $email= $_POST["email"];
+        $login= $_POST["mensagem"];
+        //ignorar, pois, eh A_I
+        $contato = new Contato(0,$nome,$email,$mensagem);
+        $contDao = new ContatoDAO();
+        //PASSA AO MODEL
+        $ret = $userDao->insert($contato);
+        if($ret === ""){
+            header("Location: /home/sucesso");    
         }else{
             $this->view->interpolar("errosql",$ret);
         }

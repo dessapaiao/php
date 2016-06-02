@@ -1,14 +1,14 @@
 <?php
 
-class NewsLetterDAO{
-    public function insert(NewsLetter $){
+class UsuarioDAO{
+    public function insert(Contato $m){
         $mysqli = new mysqli("127.0.0.1", "paiao", "", "usuario");
         if ($mysqli->connect_errno) {
             return "Falha no MySQL: (" . $mysqli->connect_errno . ") " . $mysqli->connect_error;
         }
-        $stmt = $mysqli->prepare("INSERT INTO New(name,email,) VALUES (?,?)");
+        $stmt = $mysqli->prepare("INSERT INTO Contato(name,email,mensagem) VALUES (?,?,?)");
         //Mudar aqui de acordo com a aula de seguranca
-        $stmt->bind_param("ss",$u->getNome(),$u->getEmail());
+        $stmt->bind_param("ssss",$m->getNome(),$m->getEmail(),$m->getMensgem());
         //----------------------------------------------
         if (!$stmt->execute()) {
             return "Erro: (" . $stmt->errno . ") " . $stmt->error . "<br>";
@@ -17,16 +17,18 @@ class NewsLetterDAO{
         return "";
     }
     
-    public function getNewsLetter($id){
+    public function getContato($id){
         $mysqli = new mysqli("127.0.0.1", "paiao", "", "usuario");
-        $stmt = $mysqli->prepare("SELECT * FROM New WHERE id=?");
+        $stmt = $mysqli->prepare("SELECT * FROM Contato WHERE id=?");
         $stmt->bind_param("i",$id);
         $stmt->execute();
-        $stmt->bind_result($id,$nome,$email);
+        $stmt->bind_result($id,$nome,$email, $mensagem);
         $stmt->fetch();
-        $newsLetter= new NewsLetter($id,$nome,$email);
-        return $usuario;
+        $contato = new Contato($id,$nome,$email,$mensagem);
+        return $contato;
     }
+    
+  
 }
 
 ?>

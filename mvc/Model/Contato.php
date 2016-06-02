@@ -1,14 +1,13 @@
 <?php
 
-class Noticia{
-    private $id, $nome, $email, $login, $senha;
+class Usuario{
+    private $id, $nome, $email, $mensagem;
     
-    public function __construct($id, $nome,$email, $login, $senha){
+    public function __construct($id, $nome,$email, $mensagem){
         $this->id = $id;
         $this->nome = $nome;
         $this->email = $email;
-        $this->login = $login;
-        $this->senha = $senha;
+        $this->mensagem = $mensagem;
     }
     
     public function getId(){
@@ -22,12 +21,8 @@ class Noticia{
         return $this->email;
     }
     
-    public function getLogin(){
-        return $this->login;
-    }
-    
-    public function getSenha(){
-        return $this->senha;
+    public function getMensagem(){
+        return $this->mensagem;
     }
     
 }

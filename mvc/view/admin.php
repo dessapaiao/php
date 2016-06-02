@@ -47,26 +47,21 @@
             <ul class="nav nav-stacked">
                 <li class="nav-header"> <a href="#" data-toggle="collapse" data-target="#userMenu">Configurações</a>
                     <ul class="nav nav-stacked collapse in" id="userMenu">
-                        <li class="active"> <a href="#"><i class="glyphicon glyphicon-home"></i> Tabelas</a></li>
-                        <li><a href="#"><i class="glyphicon glyphicon-envelope"></i> Notícias <span class="badge badge-info">4</span></a></li>
-                        <li><a href="#"><i class="glyphicon glyphicon-cog"></i> Options</a></li>
-                        <li><a href="#"><i class="glyphicon glyphicon-comment"></i> Shoutbox</a></li>
-                        <li><a href="#"><i class="glyphicon glyphicon-user"></i> Staff List</a></li>
-                        <li><a href="#"><i class="glyphicon glyphicon-flag"></i> Transactions</a></li>
-                        <li><a href="#"><i class="glyphicon glyphicon-exclamation-sign"></i> Rules</a></li>
-                        <li><a href="#"><i class="glyphicon glyphicon-off"></i> Logout</a></li>
+                        <li class="active"><a href="#"> Tabelas</a></li>
+                        <li><a href="#"> Notícias</a></li>
+                        <li><a href="#"> Resenhas</a></li>
                     </ul>
                 </li>
 
             <hr>
 
-            <a href="#"><strong><i class="glyphicon glyphicon-link"></i> Comentários</strong></a>
+            <a href="#"><strong> Comentários</strong></a>
 
             <hr>
 
             <ul class="nav nav-pills nav-stacked">
                 <li class="nav-header"></li>
-                <li><a href="#"><i class="glyphicon glyphicon-list"></i> Comentários</a></li>
+                <li><a href="#"> Comentários</a></li>
             </ul>
 
            
@@ -76,50 +71,19 @@
         <!-- /col-3 -->
         <div class="col-sm-9">
 
-            <!-- column 2 -->
-            <ul class="list-inline pull-right">
-                <li><a href="#"><i class="glyphicon glyphicon-cog"></i></a></li>
-                <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="glyphicon glyphicon-comment"></i><span class="count">3</span></a>
-                    <ul class="dropdown-menu" role="menu">
-                        <li><a href="#">1. Is there a way..</a></li>
-                        <li><a href="#">2. Hello, admin. I would..</a></li>
-                        <li><a href="#"><strong>All messages</strong></a></li>
-                    </ul>
-                </li>
-                <li><a href="#"><i class="glyphicon glyphicon-user"></i></a></li>
-                <li><a title="Add Widget" data-toggle="modal" href="#addWidgetModal"><span class="glyphicon glyphicon-plus-sign"></span> Add Widget</a></li>
-            </ul>
-            <a href="#"><strong><i class="glyphicon glyphicon-dashboard"></i> My Dashboard</strong></a>
+            
+            <a href="#"><strong>Meu Painel</strong></a>
             <hr>
 
             <div class="row">
-                <!-- center left-->
-                <div class="col-md-6">
-                    
-                    <div class="panel panel-default">
-                        <div class="panel-heading">
-                            <h4>New Requests</h4></div>
-                        <div class="panel-body">
-                            <div class="list-group">
-                                <a href="#" class="list-group-item active">Hosting virtual mailbox serv..</a>
-                                <a href="#" class="list-group-item">Dedicated server doesn't..</a>
-                                <a href="#" class="list-group-item">RHEL 6 install on new..</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!--/col-->
+              
                 <div class="col-md-6">
                     <div class="panel panel-default">
                         <div class="panel-heading">
-                            <h4>Notices</h4></div>
+                            <h4>Cadastro de notícias</h4></div>
                         <div class="panel-body">
-                            <div class="alert alert-info">
-                                <button type="button" class="close" data-dismiss="alert">Ã—</button>
-                                This is a dismissable alert.. just sayin'.
-                            </div>
-                            <p>This is a dashboard-style layout that uses Bootstrap 3. You can use this template as a starting point to create something more unique.</p>
-                            <p>Visit the Bootstrap Playground at <a href="http://bootply.com">Bootply</a> to tweak this layout or discover more useful code snippets.</p>
+                            <p>yzaz</p>
+                            <p></p>
                         </div>
                     </div>
                     
@@ -127,28 +91,28 @@
                         <div class="panel-heading">
                             <div class="panel-title">
                                 <i class="glyphicon glyphicon-wrench pull-right"></i>
-                                <h4>Post Request</h4>
+                                <h4>Adicionar conteúdo</h4>
                             </div>
                         </div>
                         <div class="panel-body">
                             <form class="form form-vertical">
                                 <div class="control-group">
-                                    <label>Name</label>
+                                    <label>Título</label>
                                     <div class="controls">
-                                        <input type="text" class="form-control" placeholder="Enter Name">
+                                        <input type="text" class="form-control" placeholder="">
                                     </div>
                                 </div>
                                 <div class="control-group">
-                                    <label>Message</label>
+                                    <label>Texto</label>
                                     <div class="controls">
                                         <textarea class="form-control"></textarea>
                                     </div>
                                 </div>
                                 <div class="control-group">
-                                    <label>Category</label>
+                                    <label>Categoria</label>
                                     <div class="controls">
                                         <select class="form-control">
-                                            <option>options</option>
+                                            <option>opções</option>
                                         </select>
                                     </div>
                                 </div>
@@ -156,7 +120,7 @@
                                     <label></label>
                                     <div class="controls">
                                         <button type="submit" class="btn btn-primary">
-                                            Post
+                                            cadastrar
                                         </button>
                                     </div>
                                 </div>
@@ -180,7 +144,6 @@
 </div>
 <!-- /Main -->
 
-<footer class="text-center">This Bootstrap 3 dashboard layout is compliments of <a href="http://www.bootply.com/85850"><strong>Bootply.com</strong></a></footer>
 
 <div class="modal" id="addWidgetModal">
     <div class="modal-dialog">

@@ -10,42 +10,36 @@ class HomeController extends Controller{
         $this->view->renderizar("ola");
         $_SESSION["_OI"] = "Ola";
     }
-    // /home/formulario
-    public function formulario(){
-        $this->view->renderizar("form");
+    
+    
+    public function cadastro(){
+        $this->view->renderizar("cadastro");
     }
-    // /home/outro
-    public function outro(){
-        echo $_POST["nome"] . "<br>";
-        echo $_SESSION["_OI"];
+    public function news(){
+        $this->view->renderizar("news");
     }
     
-    <?php
-
-class HomeController extends Controller{
-    
-    public function __call($m,$a){
-        $this->view->renderizar("erro");
-    }
-    // /home/ola
-    public function ola(){
-        $this->view->renderizar("ola");
-        $_SESSION["_OI"] = "Ola";
-    }
-    // /home/formulario
-    public function formulario(){
-        $this->view->renderizar("a");
-    }
-    // /home/outro
-    public function outro(){
-        echo $_POST["nome"] . "<br>";
-        echo $_SESSION["_OI"];
+    public function sucesso(){
+        $this->view->renderizar("sucesso");
     }
     
-   
+    public function index(){
+        $this->view->renderizar("index");
     }
     
+    public function noticia(){
+        $this ->view->renderizar("noticia");
+    }
+    
+    public function contato(){
+        $this ->view->renderizar("contato");
+    }
+    
+    public function not(){
+        $this ->view->renderizar("not");
+    }
 }
+    
 
 ?>
     
