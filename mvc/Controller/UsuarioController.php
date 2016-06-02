@@ -10,7 +10,7 @@ class UsuarioController extends Controller{
         $this->view->renderizar("cadastro");
     }
     
-    public function perfil(){
+     public function admin(){
         $id = $_GET["arg0"];
         //PEGANDO DADOS DO MODEL
         $userDao = new UsuarioDAO();
@@ -19,7 +19,7 @@ class UsuarioController extends Controller{
         // MANDANDO PARA VIEW
         $dado["nome"] = $usuario->getNome();
         $dado["login"] = $usuario->getLogin();
-        $this->view->interpolar("perfil",$dado);
+        $this->view->interpolar("admin",$dado);
         // ------------------------------
     }
     
@@ -30,15 +30,20 @@ class UsuarioController extends Controller{
     public function inserir(){
         //OBTEM DA VIEW
         $nome = $_POST["nome"];
-        $login = $_POST["email"];
-        $login = $_POST["login"];
+        $email= $_POST["email"];
+        $login= $_POST["login"];
         $senha = $_POST["senha"];
         //ignorar, pois, eh A_I
         $usuario = new Usuario(0,$nome,$email,$login,$senha);
         $userDao = new UsuarioDAO();
         //PASSA AO MODEL
-        $userDao->insert($usuario);
-        header("Location: /usuario/sucesso");
+        $ret = $userDao->insert($usuario);
+        if($ret === ""){
+            header("Location: /usuario/sucesso");    
+        }else{
+            $this->view->interpolar("errosql",$ret);
+        }
+        
     }
     
 }

@@ -16,7 +16,7 @@
 		
         <h3 class="headline">Formulário de Contato</h3>
         
-			<form method="POST" name="contactform" id="contactform" action="contato.php">
+			<form method="POST"  action="contato.php">
 				<fieldset>
 					<div>
 						<label>Nome:</label>

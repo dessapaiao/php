@@ -28,10 +28,10 @@ class UsuarioDAO{
         return $usuario;
     }
     
-    public function authUser($email,$login,$senha){
+    public function authUser($login,$senha){
         $mysqli = new mysqli("127.0.0.1", "paiao", "", "usuario");
         $stmt = $mysqli->prepare("SELECT id FROM User WHERE login=? AND senha=?");
-        $stmt->bind_param("sss",$email,$login,$senha);
+        $stmt->bind_param("ss",$login,$senha);
         $stmt->execute();
         $stmt->bind_result($id);
         $stmt->fetch();
@@ -47,3 +47,9 @@ class UsuarioDAO{
 }
 
 ?>
+
+
+
+
+
+
