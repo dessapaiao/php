@@ -21,6 +21,7 @@ class UsuarioDAO{
         $mysqli = new mysqli("127.0.0.1", "paiao", "", "usuario");
         $stmt = $mysqli->prepare("SELECT * FROM User WHERE id=?");
         $stmt->bind_param("i",$id);
+        
         $stmt->execute();
         $stmt->bind_result($id,$nome,$email, $login, $senha);
         $stmt->fetch();

@@ -11,17 +11,17 @@ class App{
     
     public function startApp(){
         $clazzName = ucfirst($this->clazz) . "Controller";
-        $modelName = ucfirst($this->clazz) . "Model";
-        if($modelName == "LoginModel"){
-            require_once "Model/UsuarioModel.php";
+        $modelName = ucfirst($this->clazz) ;
+            require_once "Model/Usuario.php";
             require_once "Model/UsuarioDAO.php";
-        }else{
-            if($modelName !== "HomeModel"){
-                require_once "Model/" . $modelName . ".php";
-                require_once "Model/" . ucfirst($this->clazz) . "DAO.php";    
-            }
-        }
-        require_once "Controller/Controller.php";
+            require_once "Model/Contato.php";
+            require_once "Model/ContatoDAO.php";
+            require_once "Model/Newsletter.php";
+            require_once "Model/NewsletterDAO.php";
+            require_once "Model/Noticia.php";
+            require_once "Model/NoticiaDAO.php";
+            
+            require_once "Controller/Controller.php";
         require_once "Controller/" . $clazzName . ".php";
         $hc = new $clazzName();
         $met = $this->met;

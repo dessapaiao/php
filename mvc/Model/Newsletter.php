@@ -1,7 +1,7 @@
 <?php
 
-class NewsLetter{
-    private $id, $nome;
+class Newsletter{
+    private $id, $nome,$email;
     
     public function __construct($id, $nome,$email){
         $this->id = $id;

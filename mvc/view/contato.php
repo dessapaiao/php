@@ -25,12 +25,12 @@
 
 					<div>
 						<label >Email:</label>
-						<input name="email" type="email" id="email" pattern="^[A-Za-z0-9](([_\.\-]?[a-zA-Z0-9]+)*)@([A-Za-z0-9]+)(([\.\-]?[a-zA-Z0-9]+)*)\.([A-Za-z]{2,})$" />
+						<input name="email" type="email" id="email" />
 					</div>
 
 					<div>
 						<label>Mensagem:</label>
-						<textarea name="mensagem" cols="40" rows="3" id="mensagem" spellcheck="true"></textarea>
+						<textarea name="mensagem" cols="40" rows="3" id="mensagem" ></textarea>
 					</div>
 
 				</fieldset>

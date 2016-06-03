@@ -27,7 +27,7 @@
         <div class="navbar-collapse collapse">
             <ul class="nav navbar-nav navbar-right">
                 
-                <li><a href="#"></i>Logout</a></li>
+                <li><a href="https://trabalho-php-paiao.c9users.io/login/logout"></i>Logout</a></li>
             </ul>
         </div>
     </div>
@@ -45,9 +45,8 @@
             <hr>
 
             <ul class="nav nav-stacked">
-                <li class="nav-header"> <a href="#" data-toggle="collapse" data-target="#userMenu">Configurações</a>
                     <ul class="nav nav-stacked collapse in" id="userMenu">
-                        <li class="active"><a href="#"> Tabelas</a></li>
+                        <li class="active"><a href="#"> Especiais</a></li>
                         <li><a href="#"> Notícias</a></li>
                         <li><a href="#"> Resenhas</a></li>
                     </ul>
@@ -90,7 +89,7 @@
                     <div class="panel panel-default">
                         <div class="panel-heading">
                             <div class="panel-title">
-                                <i class="glyphicon glyphicon-wrench pull-right"></i>
+                                
                                 <h4>Adicionar conteúdo</h4>
                             </div>
                         </div>

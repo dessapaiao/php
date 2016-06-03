@@ -1,6 +1,6 @@
 <?php
 
-class Usuario{
+class Contato{
     private $id, $nome, $email, $mensagem;
     
     public function __construct($id, $nome,$email, $mensagem){

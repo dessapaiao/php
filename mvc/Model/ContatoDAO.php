@@ -1,6 +1,6 @@
 <?php
 
-class UsuarioDAO{
+class ContatoDAO{
     public function insert(Contato $m){
         $mysqli = new mysqli("127.0.0.1", "paiao", "", "usuario");
         if ($mysqli->connect_errno) {
@@ -8,7 +8,7 @@ class UsuarioDAO{
         }
         $stmt = $mysqli->prepare("INSERT INTO Contato(name,email,mensagem) VALUES (?,?,?)");
         //Mudar aqui de acordo com a aula de seguranca
-        $stmt->bind_param("ssss",$m->getNome(),$m->getEmail(),$m->getMensgem());
+        $stmt->bind_param("sss",$m->getNome(),$m->getEmail(),$m->getMensagem());
         //----------------------------------------------
         if (!$stmt->execute()) {
             return "Erro: (" . $stmt->errno . ") " . $stmt->error . "<br>";
