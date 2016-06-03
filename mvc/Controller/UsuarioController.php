@@ -80,7 +80,7 @@ class UsuarioController extends Controller{
 		if (!strstr("/^image/(pjpeg|jpeg|png|gif|bmp)$/", $foto["type"])) {
 			$erro[1] = "Isso nao eh uma imagem.";
 		}
-		//strtolower(Mayara) ele vai deixar strtolower(mayara)
+		//strtolower
 		//substr — Retorna uma parte de uma string
 		$ext      = strtolower(substr($foto['name'], -4)); //Pegando extensão do arquivo
 		$fotonome = date("Y.m.d-H-i-s") . $ext; //Definindo um novo nome para o arquivo
@@ -91,7 +91,7 @@ class UsuarioController extends Controller{
 		// Faz o upload da imagem para seu respectivo caminho
 		move_uploaded_file($foto["tmp_name"], $caminho . $foton);
 
-		// CADASTRAR RECEITA NO BD
+		
         $autor = $_POST["autor"];
         //ignorar, pois, eh A_I
         $noticia = new Noticia(0,$titulo,$foto,$noticia,$autor);
