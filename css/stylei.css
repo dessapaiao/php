@@ -13,4 +13,20 @@ body{
 
 menu{
     width: 1000px;
+    letter-spacing: 1px;
+
+}
+
+li, ul{
+    display: inline;
+    list-style: none;
+    background-color:#000;
+
+}
+
+a{
+    text-decoration: none;
+	color: inherit;
+	font-family: Arial;
+    text-transform: none;
 }
