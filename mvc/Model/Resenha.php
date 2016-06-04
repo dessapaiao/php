@@ -17,7 +17,7 @@ class Resenha{
     }
     
     public function getNome(){
-        return $this->video;
+        return $this->nome;
     }
     
     public function getOpiniao(){
@@ -25,7 +25,7 @@ class Resenha{
     }
     
     public function getTipo(){
-        return $this->opiniao;
+        return $this->tipo;
     }
     
     public function getVideo(){

@@ -63,9 +63,6 @@
                 <li><a href="#"> Comentários</a></li>
             </ul>
 
-           
-           
-
         </div>
         <!-- /col-3 -->
         <div class="col-sm-9">
@@ -79,48 +76,47 @@
                 <div class="col-md-6">
                     <div class="panel panel-default">
                         <div class="panel-heading">
-                            <h4>Cadastro de notícias</h4></div>
-                        <div class="panel-body">
-                            <p>yzaz</p>
-                            <p></p>
-                        </div>
-                    </div>
-                    
-                    <div class="panel panel-default">
-                        <div class="panel-heading">
                             <div class="panel-title">
                                 
-                                <h4>Adicionar conteúdo</h4>
+                                <h4>Adicionar um novo usuario</h4>
                             </div>
                         </div>
                         <div class="panel-body">
-                            <form class="form form-vertical">
+                            <form  action="/usuario/cadastroResenha" method="POST"  class="form form-vertical"/>
                                 <div class="control-group">
-                                    <label>Título</label>
+                                    <label>Titulo Filme</label>
                                     <div class="controls">
-                                        <input type="text" class="form-control" placeholder="">
+                                        <input type="text" name="nome" class="form-control" placeholder="Filme"/>
                                     </div>
                                 </div>
                                 <div class="control-group">
-                                    <label>Texto</label>
+                                    <label>Resenha</label>
                                     <div class="controls">
-                                        <textarea class="form-control"></textarea>
+                                        <input type="textarea" name="opiniao"  class="form-control"/>
+                                         
                                     </div>
+                                <div class="control-group">
+                                    <label>Genero</label>
+                                    <div class="controls">
+                                        <input type="text" name="tipo" class="form-control" placeholder="Genero"/>
+                                </div>
                                 </div>
                                 <div class="control-group">
-                                    <label>Categoria</label>
+                                    <label>Link do Trailer</label>
                                     <div class="controls">
-                                        <select class="form-control">
-                                            <option>opções</option>
-                                        </select>
+                                        <input type="text" name="video" class="form-control" placeholder="senha"/>
                                     </div>
-                                </div>
+                                    </div>
+                                 <div class="control-group">
+                                    <label>Autor do post</label>
+                                    <div class="controls">
+                                        <input type="text" name="autor" class="form-control" placeholder="autor"/>
+                                    </div>
+                                    </div>
                                 <div class="control-group">
                                     <label></label>
                                     <div class="controls">
-                                        <button type="submit" class="btn btn-primary">
-                                            cadastrar
-                                        </button>
+                                    <input type="submit"  class="btn btn-primary" value="cadastrar"/>
                                     </div>
                                 </div>
                             </form>
@@ -128,15 +124,6 @@
                         <!--/panel content-->
                     </div>
                     <!--/panel-->
-
-                    
-                    <!--/panel-->
-
-                </div>
-                <!--/col-span-6-->
-
-            </div>
-            <!--/row-->
 
         <!--/col-span-9-->
     </div>

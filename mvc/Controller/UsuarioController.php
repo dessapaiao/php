@@ -15,7 +15,7 @@ class UsuarioController extends Controller{
         // ------------------------------
     }
     
-    public function inserir(){
+    public function cadastroUsuario(){
         //OBTEM DA VIEW
         $nome = $_POST["nome"];
         $email= $_POST["email"];
@@ -68,7 +68,7 @@ class UsuarioController extends Controller{
         
     }
     
-    public function inserirResenha(){
+    public function CadastroResenha(){
         //OBTEM DA VIEW
         $nome = $_POST["nome"];
         $opiniao =$_POST["opiniao"];

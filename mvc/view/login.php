@@ -11,9 +11,9 @@
 
         <div id="login">
     <center><img src="/css/imgs/admin.png"/></center><br>
-<form action="/login/autenticar" method="POST">
-    <input type="text" required value="Login" name="login" />
-    <input type="password" required value="Password" name="senha"/>
+    <form action="/login/autenticar" method="POST">
+    <input type="text" required  name="login" placeholder="Login"/>
+    <input type="password" required  name="senha"placeholder="Senha" />
     <input type="submit" value="OK"/>
 </form>
 

@@ -30,12 +30,13 @@ class HomeController extends Controller{
     }
     
     
-    
     public function resenha(){
         $p = new ResenhaDAO();
         $todosResd = $p->getResenhas();
         $this->view->interpolar("resenha",$todosResd);
     }
+    
+     
     
     
 }

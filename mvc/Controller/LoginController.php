@@ -31,6 +31,18 @@ class LoginController extends Controller{
             header("Location: /usuario/admin/" . $ehLoginCorreto);
         }
     }
+    
+    public function Adminresenha(){
+        $this ->view->renderizar("adminresenha");
+    }
+    public function Admincadastro(){
+        $this ->view->renderizar("admincadastro");
+    }
+    public function Adminnotica(){
+        $this ->view->renderizar("adminotica");
+    }
+   
+    
 }
 
 ?>

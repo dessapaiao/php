@@ -63,9 +63,6 @@
                 <li><a href="#"> Comentários</a></li>
             </ul>
 
-           
-           
-
         </div>
         <!-- /col-3 -->
         <div class="col-sm-9">
@@ -79,48 +76,40 @@
                 <div class="col-md-6">
                     <div class="panel panel-default">
                         <div class="panel-heading">
-                            <h4>Cadastro de notícias</h4></div>
-                        <div class="panel-body">
-                            <p>yzaz</p>
-                            <p></p>
-                        </div>
-                    </div>
-                    
-                    <div class="panel panel-default">
-                        <div class="panel-heading">
                             <div class="panel-title">
                                 
-                                <h4>Adicionar conteúdo</h4>
+                                <h4>Adicionar um novo usuario</h4>
                             </div>
                         </div>
                         <div class="panel-body">
-                            <form class="form form-vertical">
+                            <form  action="/usuario/cadastroUsuario" method="POST"  class="form form-vertical">
                                 <div class="control-group">
-                                    <label>Título</label>
+                                    <label>Nome</label>
                                     <div class="controls">
-                                        <input type="text" class="form-control" placeholder="">
+                                        <input type="text" name="nome" class="form-control" placeholder="nome">
                                     </div>
                                 </div>
                                 <div class="control-group">
-                                    <label>Texto</label>
+                                    <label>Email</label>
                                     <div class="controls">
-                                        <textarea class="form-control"></textarea>
+                                        <input type="text" name="email" class="form-control" placeholder="email">
                                     </div>
+                                <div class="control-group">
+                                    <label>Login</label>
+                                    <div class="controls">
+                                        <input type="text" name="login" class="form-control" placeholder="login">
+                                </div>
                                 </div>
                                 <div class="control-group">
-                                    <label>Categoria</label>
+                                    <label>Senha</label>
                                     <div class="controls">
-                                        <select class="form-control">
-                                            <option>opções</option>
-                                        </select>
+                                        <input type="password" name="senha" class="form-control" placeholder="senha">
                                     </div>
-                                </div>
+                                    </div>
                                 <div class="control-group">
                                     <label></label>
                                     <div class="controls">
-                                        <button type="submit" class="btn btn-primary">
-                                            cadastrar
-                                        </button>
+                                    <input type="submit"  class="btn btn-primary" value="cadastrar"/>
                                     </div>
                                 </div>
                             </form>
@@ -160,9 +149,7 @@
             </div>
         </div>
         <!-- /.modal-content -->
-    </div>
-    <!-- /.modal-dalog -->
-</div>
+    
 <!-- /.modal -->
 	<!-- script references -->
 		<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
