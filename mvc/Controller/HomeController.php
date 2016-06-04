@@ -29,6 +29,15 @@ class HomeController extends Controller{
         $this ->view->renderizar("contato");
     }
     
+    
+    
+    public function resenha(){
+        $p = new ResenhaDAO();
+        $todosResd = $p->getResenhas();
+        $this->view->interpolar("resenha",$todosResd);
+    }
+    
+    
 }
 
 ?>

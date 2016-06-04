@@ -36,6 +36,7 @@
 				</fieldset>
 				<div id="result"></div>
 				<input type="submit" id="submit" value="Enviar Mensagem" />
+				<input submit
 			</form>
 		</section>
     </body>

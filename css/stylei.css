@@ -1,0 +1,16 @@
+#header{
+    background-image: url(/css/imgs/h.png);
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    height: 281px;
+    width: 100%;
+}
+
+body{
+    color: #fff;
+    background: #131313;
+}
+
+menu{
+    width: 1000px;
+}
