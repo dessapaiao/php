@@ -22,6 +22,8 @@ class App{
             require_once "Model/NoticiaDAO.php";
             require_once "Model/Resenha.php";
             require_once "Model/ResenhaDAO.php";
+            require_once "Model/Comentario.php";
+            require_once "Model/ComentarioDAO.php";
             
             require_once "Controller/Controller.php";
         require_once "Controller/" . $clazzName . ".php";

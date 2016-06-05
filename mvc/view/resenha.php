@@ -38,6 +38,16 @@
         ?>
 
     </div>
+    <h3>Deixe seu comentario</h3>
+    <form action="/usuario/cadastroComentario" method="POST" >
+        <label for="">Nome</label>
+        <input type="text" name="nome"/><br>
+        <label for="">Email</label>
+        <input type="text" name="email"/><br>
+        <label for="">Comentario</label>
+        <input type="textarea" name="comix"/>
+        <input type="submit" value="cadastrar"/>
+    </form>
     
  </body>
  <footer></footer>

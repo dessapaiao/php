@@ -41,6 +41,12 @@ class LoginController extends Controller{
     public function Adminnotica(){
         $this ->view->renderizar("adminotica");
     }
+    
+    public function admincomentario(){
+        $p = new ComentarioDAO();
+        $todosComt = $p->getComentarios();
+        $this->view->interpolar("admincomentario",$todosComt);
+    }
    
     
 }

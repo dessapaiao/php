@@ -33,6 +33,23 @@ class UsuarioController extends Controller{
         }
         
     }
+    public function cadastroComentario(){
+        //OBTEM DA VIEW
+        $nome = $_POST["nome"];
+        $email= $_POST["email"];
+        $comix = $_POST["comix"];
+        //ignorar, pois, eh A_I
+        $comentario = new Comentario(0,$nome,$email,$comix);
+        $comDao = new ComentarioDAO();
+        //PASSA AO MODEL
+        $ret = $comDao->insert($comentario);
+        if($ret === ""){
+            header("Location: /home/sucesso");    
+        }else{
+            $this->view->interpolar("errosql",$ret);
+        }
+        
+    }
     public function inserirContato(){
         //OBTEM DA VIEW
         $nome = $_POST["nome"];
@@ -88,49 +105,6 @@ class UsuarioController extends Controller{
         }
         
     }
-     
-    public function inserirNoticia(){
-        $titulo = $_POST["titulo"];
-<<<<<<< HEAD
-        $foto = $_FILES=["foto"];
-
-        $noticia = $_POST["noticia"];
-=======
-        $noticia = $_POST["noticia"];
-        $foto = $_FILES["foto"];
-		//verificando se é mesmo uma imagem
-		if (!strstr("/^image/(pjpeg|jpeg|png|gif|bmp)$/", $foto["type"])) {
-			$erro[1] = "Isso nao eh uma imagem.";
-		}
-		//strtolower
-		//substr — Retorna uma parte de uma string
-		$ext      = strtolower(substr($foto['name'], -4)); //Pegando extensão do arquivo
-		$fotonome = date("Y.m.d-H-i-s") . $ext; //Definindo um novo nome para o arquivo
-
-		// Caminho de onde ficara a imagem
-		$caminho = "/mvc";
-
-		// Faz o upload da imagem para seu respectivo caminho
-		move_uploaded_file($foto["tmp_name"], $caminho . $foton);
-
-		
->>>>>>> 5c8d8fec1ba766872897b0a99683b045dfebb272
-        $autor = $_POST["autor"];
-        //ignorar, pois, eh A_I
-        $noticia = new Noticia(0,$titulo,$foto,$noticia,$autor);
-        $notDao = new NoticiaDAO();
-        //PASSA AO MODEL
-        $ret = $notDao->insert($noticia);
-        if($ret === ""){
-            header("Location: /home/sucesso");    
-        }else{
-            $this->view->interpolar("erro",$ret);
-        }
-        
-    }
-    
-    
-    
 }
 
 ?>
