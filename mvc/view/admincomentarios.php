@@ -82,20 +82,20 @@
                             <h4>comentarios Resenha</h4></div>
                         <div class="panel-body">
                             <div id="content">
-                            <?php
-                        foreach($dado as $comentario){
+                             <?php 
+                        foreach($dado as $comentnew){
                     	    echo "<div>";
                     	    echo "Nome" ."<br>" ;
-                    	    echo " " . $comentario->getNome() . "<br>";
+                    	    echo " " . $comentnew->getNome() . "<br>";
                     	    echo "Email" ."<br>" ;
-                            echo " " . $comentario->getEmail() . "<br>";
+                            echo " " . $comentnew->getEmail() . "<br>";
                             echo "Comentario" ."<br>" ;
-                            echo " " . $comentario->getComix() . "<br>";
-                    	    echo "</div>"."<br>";
+                            echo " " . $comentnew->getComent() . "<br>";
+                    	    echo "</div>"."<br>"; 
                                         	
                                 }
-                       ?>
-
+                       ?> 
+                       
                         </div>
                     </div>
                 
@@ -107,8 +107,7 @@
                 </div>
                 <!--/col-span-6-->
 
-           
-
+            
         <!--/col-span-9-->
     </div>
 </div>

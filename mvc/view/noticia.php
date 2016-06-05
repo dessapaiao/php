@@ -30,17 +30,25 @@
         
         <div id="posts">
             
-        <article></article>
+        <article>
         <?php
     foreach($dado as $post){
-	    echo "<div>";
+        echo "<div>";
+	    echo "<h1>";
 	    echo "Titulo" ."<br>" ;
+	    echo "</h1>";
 	    echo " " . $post->getTiulo() . "<br>";
+	    echo "<h1>";
 	    echo "Resenha" ."<br>" ;
+	    echo "</h1>";
         echo " " . $post->getPosti() . "<br>";
+        echo "<h1>";
         echo "Genero" ."<br>";
+        echo "</h1>";
         echo " " . $post->getData() . "<br>";
+        echo "<h1>";
         echo "Video" ."<br>";
+        echo "</h1>";
         echo " " . $post->getAutor() . "<br>";
 	    echo "</div>"."<br>";
         }
@@ -57,10 +65,15 @@
             </form>
     
        </div>
-      
+      </article>
 
     <div id="sidebar">
-    lalalalla
+    <article>  <h1>Assine nosso newsletter e fique por dentro de tudo relacionado ao mundo do cinema!</h1><br>
+        <form action="/usuario/CadastroNew" method="POST">
+            <input type="text" placeholder="Nome" name="nome"/>
+            <input type="text" placeholder="E-mail" name="email"/><br>
+            <input type="submit" value="Assinar"/>
+        </form></article>
     </div>
 </div>
     

@@ -52,6 +52,12 @@ class LoginController extends Controller{
         $todosNes = $p->getNewsletters();
         $this->view->interpolar("adminnewsletter",$todosNes);
     }
+    public function admincomentarios(){
+        $e = new ComentnewDao();
+        $todosCmt = $e->getComentnews();
+        $this->view->interpolar("admincomentarios",$todosCmt);
+    }
+    
     
 }
 

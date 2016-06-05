@@ -32,7 +32,7 @@ class ComentnewDAO{
         $stmt = $mysqli->prepare("SELECT * FROM ComentNew");
         $stmt->execute();
         $arr = mysqli_fetch_all(mysqli_stmt_get_result($stmt));
-        $resd = array();
+        $cmt = array();
         foreach($arr as $a){
             $cmt[] = new Comentnew($a[0],$a[1],$a[2],$a[3]);
         }
