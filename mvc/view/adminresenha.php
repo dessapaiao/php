@@ -54,7 +54,7 @@
 
             <hr>
 
-            <a href="#"><strong> Comentários</strong></a>
+            <a href="https://trabalho-php-paiao.c9users.io/login/admincomentario"><strong> Comentários</strong></a>
 
             <hr>
 

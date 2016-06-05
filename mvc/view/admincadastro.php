@@ -54,13 +54,13 @@
 
             <hr>
 
-            <a href="#"><strong> Comentários</strong></a>
+            <a href="https://trabalho-php-paiao.c9users.io/login/admincomentario"><strong> Comentários</strong></a>
 
             <hr>
 
             <ul class="nav nav-pills nav-stacked">
                 <li class="nav-header"></li>
-                <li><a href="#"> Comentários</a></li>
+                <li><a href=""> News</a></li>
             </ul>
 
         </div>

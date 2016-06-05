@@ -1,15 +1,74 @@
-<h1>noticia</h1>
-
-<form action="/usuario/inserirNoticia" method="POST" enctype=”multipart/form-data”>
-    <label for="">Titulo</label>
-    <input type="text" name="titulo"/><br>
+<!DOCTYPE html>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<html>
+<head>
+ <style>
+    <?php include "css/styleindex.css"; ?>
+    </style>
     
-    <h4>Envie uma foto</h4>
+    <title>Notícias</title>
 
-	<input type="file" name="foto" id="foto" accept="image/*"/><br>
-    <label for="">Noticia</label>
-    <input type="textarea" name="noticia"/><br>
-    <label for="">Autor</label>
-    <input type="text" name="autor"/>
-    <input type="submit" value="enviar"/>
-</form>
+ </head>
+ 
+<body>
+
+<div align="center">
+<ul class="snip1189">
+  <li><a href="#">Home</a></li>
+  <li><a href="https://trabalho-php-paiao.c9users.io/home/index">Sobre</a></li>
+  <li class="current"><a href="#">Notícias</a></li>
+  <li><a href="https://trabalho-php-paiao.c9users.io/home/resenha">Resenhas</a></li>
+  <li><a href="https://trabalho-php-paiao.c9users.io/home/contato">Contato</a></li>
+</ul> 
+</div>   
+
+<div id="header">
+</div>    
+
+    <div id="conteudo">
+        <div id="content">
+        <?php
+    foreach($dado as $resenha){
+	    echo "<div>";
+	    echo "Titulo" ."<br>" ;
+	    echo " " . $resenha->getNome() . "<br>";
+	    echo "Resenha" ."<br>" ;
+        echo " " . $resenha->getOpiniao() . "<br>";
+        echo "Genero" ."<br>";
+        echo " " . $resenha->getTipo() . "<br>";
+        echo "Video" ."<br>";
+        echo " " . $resenha->getVideo() . "<br>";
+        echo "Autor" ."<br>";
+	    echo " " . $resenha->getAutor() . " ";
+	    echo "</div>"."<br>";
+        }
+        ?>
+        </div>
+        
+        <div id="posts">
+        <div>
+        <h3>Deixe seu comentario</h3>
+            <form action="/usuario/cadastroComentario" method="POST" >
+                <label for="">Nome</label>
+                <input type="text" name="nome"/><br>
+                <label for="">Email</label>
+                <input type="text" name="email"/><br>
+                <label for="">Comentario</label>
+                <input type="textarea" name="comix"/>
+                <input type="submit" value="cadastrar"/>
+            </form>
+        
+        </div>
+        </div>
+        
+        <div id="sidebar">
+    
+    </div>
+    
+    </div>
+    
+
+    
+
+ </body>
+</html>

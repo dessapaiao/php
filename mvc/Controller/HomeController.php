@@ -24,11 +24,14 @@ class HomeController extends Controller{
     public function noticia(){
         $this ->view->renderizar("noticia");
     }
-    
-    public function contato(){
+     public function contato(){
         $this ->view->renderizar("contato");
     }
     
+    
+    public function sobre(){
+        $this ->view->renderizar("sobre");
+    }
     
     public function resenha(){
         $p = new ResenhaDAO();

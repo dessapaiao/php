@@ -103,8 +103,39 @@ class UsuarioController extends Controller{
         }else{
             $this->view->interpolar("erro",$ret);
         }
-        
     }
-}
+        
+         public function inserirNoticia(){
+            $titulo = $_POST["titulo"];
+            $foto = $_FILES["foto"];
+    		//verificando se é mesmo uma imagem
+    		if (!strstr("/^image/(pjpeg|jpeg|png|gif|bmp)$/", $foto["type"])) {
+    			$erro[1] = "Isso nao eh uma imagem.";
+    		}
+    		//strtolower
+    		//substr — Retorna uma parte de uma string
+    		$ext      = strtolower(substr($foto['name'], -4)); //Pegando extensão do arquivo
+    		$fotonome = date("Y.m.d-H-i-s") . $ext; //Definindo um novo nome para o arquivo
+    
+    		// Caminho de onde ficara a imagem
+    		$caminho = "assets/uploads/";
+    
+    		// Faz o upload da imagem para seu respectivo caminho
+    		move_uploaded_file($foto["tmp_name"], $caminho . $fotonome);
+            $noticia = $_POST["noticia"];
+            $autor = $_POST["autor"];
+            
+            //ignorar, pois, eh A_I
+            $noticia = new Noticia(0,$titulo,$foto,$noticia,$autor);
+            $notDao = new NoticiaDAO();
+            //PASSA AO MODEL
+             $ret = $notDao->insert($noticia);
+             if($ret === ""){
+            header("Location: /home/sucesso");    
+            }else{
+             $this->view->interpolar("erro",$ret);
+         }
+        }
+    }
 
 ?>
