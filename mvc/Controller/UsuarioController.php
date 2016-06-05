@@ -50,6 +50,24 @@ class UsuarioController extends Controller{
         }
         
     }
+    
+     public function cadastroComent(){
+        //OBTEM DA VIEW
+        $nome = $_POST["nome"];
+        $email= $_POST["email"];
+        $coment = $_POST["coment"];
+        //ignorar, pois, eh A_I
+        $comentnew = new Comentnew(0,$nome,$email,$coment);
+        $cmtDao = new ComentnewDAO();
+        //PASSA AO MODEL
+        $ret = $cmtDao->insert($comentnew);
+        if($ret === ""){
+            header("Location: /home/sucesso");    
+        }else{
+            $this->view->interpolar("errosql",$ret);
+        }
+        
+    }
     public function CadastroContato(){
         //OBTEM DA VIEW
         $nome = $_POST["nome"];

@@ -6,11 +6,11 @@
 		<title>Área do Administrador</title>
 		<meta name="generator" content="Bootply" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-		<link href="mvc/css/bootstrap.min.css" rel="stylesheet">
+		<link href="/mvc/css/bootstrap.min.css" rel="stylesheet">
 		<!--[if lt IE 9]>
 			<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
 		<![endif]-->
-		<link href="mvc/css/styles.css" rel="stylesheet">
+		<link href="/mvc/css/styles.css" rel="stylesheet">
 	</head>
 	<body>
 <!-- header -->
@@ -46,7 +46,7 @@
 
             <ul class="nav nav-stacked">
                     <ul class="nav nav-stacked collapse in" id="userMenu">
-                        <li class="active"><a href="https://trabalho-php-paiao.c9users.io/login/adminnoticia">Notícias</a></li>
+                        <li class="active"><a href="https://trabalho-php-paiao.c9users.io/login/adminposta">Notícias</a></li>
                         <li><a href="https://trabalho-php-paiao.c9users.io/login/adminresenha">Resenha</a></li>
                         <li><a href="https://trabalho-php-paiao.c9users.io/login/admincadastro"> Usuario</a></li>
                     </ul>
@@ -79,7 +79,7 @@
                 <div class="col-md-6">
                     <div class="panel panel-default">
                         <div class="panel-heading">
-                            <h4>comentarios</h4></div>
+                            <h4>comentarios Resenha</h4></div>
                         <div class="panel-body">
                             <div id="content">
                             <?php
@@ -99,6 +99,7 @@
                         </div>
                     </div>
                 
+                
 
                     
                     <!--/panel-->
@@ -108,6 +109,30 @@
 
             </div>
             <!--/row-->
+            <div class="row">
+              
+                <div class="col-md-6">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4>comentarios Noticia</h4></div>
+                        <div class="panel-body">
+                            <div id="content">
+                            <?php 
+                        foreach($dado as $comentario){
+                    	    echo "<div>";
+                    	    echo "Nome" ."<br>" ;
+                    	    echo " " . $comentario->getNome() . "<br>";
+                    	    echo "Email" ."<br>" ;
+                            echo " " . $comentario->getEmail() . "<br>";
+                            echo "Comentario" ."<br>" ;
+                            echo " " . $comentario->getComent() . "<br>";
+                    	    echo "</div>"."<br>"; 
+                                        	
+                                }
+                       ?> 
+
+                        </div>
+                    </div>
 
         <!--/col-span-9-->
     </div>

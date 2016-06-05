@@ -46,7 +46,7 @@
 
             <ul class="nav nav-stacked">
                     <ul class="nav nav-stacked collapse in" id="userMenu">
-                        <li class="active"><a href="https://trabalho-php-paiao.c9users.io/login/adminnoiticia">Notícias</a></li>
+                        <li class="active"><a href="https://trabalho-php-paiao.c9users.io/login/adminposta">Notícias</a></li>
                         <li><a href="https://trabalho-php-paiao.c9users.io/login/adminresenha">Resenha</a></li>
                         <li><a href="https://trabalho-php-paiao.c9users.io/login/admincadastro"> Usuario</a></li>
                     </ul>
@@ -60,7 +60,7 @@
 
             <ul class="nav nav-pills nav-stacked">
                 <li class="nav-header"></li>
-                <li><a href="#"> Comentários</a></li>
+                <li><a href="https://trabalho-php-paiao.c9users.io/login/adminnewsletter"> newsletter </a></li>
             </ul>
 
            

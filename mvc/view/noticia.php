@@ -20,13 +20,17 @@
   <li><a href="https://trabalho-php-paiao.c9users.io/home/resenha">Resenhas</a></li>
   <li><a href="https://trabalho-php-paiao.c9users.io/home/contato">Contato</a></li>
 </ul> 
-</div>   
+</div>  
 
 <div id="header">
-</div>    
-
+</div> 
+<div class="geral">
+    
     <div id="conteudo">
-        <div id="content">
+        
+        <div id="posts">
+            
+        <article></article>
         <?php
     foreach($dado as $post){
 	    echo "<div>";
@@ -41,32 +45,31 @@
 	    echo "</div>"."<br>";
         }
         ?>
-        </div>
-        
-        <div id="posts">
-        <div>
-        <h3>Deixe seu comentario</h3>
-            <form action="/usuario/cadastroComentario" method="POST" >
+    <h3>Deixe seu comentario</h3>
+            <form action="/usuario/CadastroComent" method="POST" >
                 <label for="">Nome</label>
                 <input type="text" name="nome"/><br>
                 <label for="">Email</label>
                 <input type="text" name="email"/><br>
                 <label for="">Comentario</label>
-                <input type="textarea" name="comix"/>
+                <input type="textarea" name="coment"/>
                 <input type="submit" value="cadastrar"/>
             </form>
-        
-        </div>
-        </div>
-        
-        <div id="sidebar">
     
-    </div>
-    
-    </div>
-    
+       </div>
+      
 
+    <div id="sidebar">
+    lalalalla
+    </div>
+</div>
     
+<div class="footer">
+   <center>Fim do site</center> 
+</div>
+    
+</div>
+
 
  </body>
 </html>

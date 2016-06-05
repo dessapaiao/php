@@ -18,6 +18,8 @@ class App{
             require_once "Model/ContatoDAO.php";
             require_once "Model/Newsletter.php";
             require_once "Model/NewsletterDAO.php";
+            require_once "Model/Comentnew.php";
+            require_once "Model/ComentnewDAO.php";
             require_once "Model/Posta.php";
             require_once "Model/PostaDAO.php";
             require_once "Model/Resenha.php";

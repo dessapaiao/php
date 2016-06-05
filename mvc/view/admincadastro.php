@@ -6,11 +6,11 @@
 		<title>Área do Administrador</title>
 		<meta name="generator" content="Bootply" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-		<link href="/css/bootstrap.min.css" rel="stylesheet">
+		<link href="/mvc/css/bootstrap.min.css" rel="stylesheet">
 		<!--[if lt IE 9]>
 			<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
 		<![endif]-->
-		<link href="css/styles.css" rel="stylesheet">
+		<link href="/mvc/css/styles.css" rel="stylesheet">
 	</head>
 	<body>
 <!-- header -->
@@ -44,9 +44,9 @@
 
             <hr>
 
-            <ul class="nav nav-stacked">
+               <ul class="nav nav-stacked">
                     <ul class="nav nav-stacked collapse in" id="userMenu">
-                        <li class="active"><a href="https://trabalho-php-paiao.c9users.io/login/adminnoticia">Notícias</a></li>
+                        <li class="active"><a href="https://trabalho-php-paiao.c9users.io/login/adminposta">Notícias</a></li>
                         <li><a href="https://trabalho-php-paiao.c9users.io/login/adminresenha">Resenha</a></li>
                         <li><a href="https://trabalho-php-paiao.c9users.io/login/admincadastro"> Usuario</a></li>
                     </ul>
@@ -60,7 +60,7 @@
 
             <ul class="nav nav-pills nav-stacked">
                 <li class="nav-header"></li>
-                <li><a href=""> News</a></li>
+                <li><a href="https://trabalho-php-paiao.c9users.io/login/adminnewsletter"> newsletter </a></li>
             </ul>
 
         </div>
