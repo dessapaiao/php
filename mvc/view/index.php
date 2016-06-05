@@ -36,8 +36,9 @@
         
         <div id="sidebar">
         <h1>Assine nosso newsletter é receba novidades</h1>
-        <form>
-            <input type="text" name=""/>
+        <form action="/usuario/CadastroNew" method="POST">
+            <input type="text" placeholder="Nome" name="nome"/>
+            <input type="text" placeholder="E-mail" name="email"/>
             <input type="submit" value="Assinar"/>
         </form>
     </div>

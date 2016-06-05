@@ -34,7 +34,7 @@
         <div id="posts">
         <div>
         <h3>Contato </h3>
-          <form action="/usuario/inserirContato" method="POST">
+          <form action="/usuario/CadastroContato" method="POST">
 			<div>
 				<label>Nome:</label>
 				<input name="nome" type="text" id="nome" />

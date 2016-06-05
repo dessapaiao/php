@@ -28,18 +28,16 @@
     <div id="conteudo">
         <div id="content">
         <?php
-    foreach($dado as $resenha){
+    foreach($dado as $post){
 	    echo "<div>";
 	    echo "Titulo" ."<br>" ;
-	    echo " " . $resenha->getNome() . "<br>";
+	    echo " " . $post->getTiulo() . "<br>";
 	    echo "Resenha" ."<br>" ;
-        echo " " . $resenha->getOpiniao() . "<br>";
+        echo " " . $post->getPosti() . "<br>";
         echo "Genero" ."<br>";
-        echo " " . $resenha->getTipo() . "<br>";
+        echo " " . $post->getData() . "<br>";
         echo "Video" ."<br>";
-        echo " " . $resenha->getVideo() . "<br>";
-        echo "Autor" ."<br>";
-	    echo " " . $resenha->getAutor() . " ";
+        echo " " . $post->getAutor() . "<br>";
 	    echo "</div>"."<br>";
         }
         ?>

@@ -21,9 +21,7 @@ class HomeController extends Controller{
         $this->view->renderizar("index");
     }
     
-    public function noticia(){
-        $this ->view->renderizar("noticia");
-    }
+    
      public function contato(){
         $this ->view->renderizar("contato");
     }
@@ -39,8 +37,13 @@ class HomeController extends Controller{
         $this->view->interpolar("resenha",$todosResd);
     }
     
-     
+      public function noticia(){
+        $c = new PostaDAO();
+        $todosPst = $c->getPostas();
+        $this->view->interpolar("noticia",$todosPst);
+    }
     
+
     
 }
 

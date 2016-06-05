@@ -30,16 +30,16 @@ class LoginController extends Controller{
             $_SESSION["_ID"] = $ehLoginCorreto;
             header("Location: /usuario/admin/" . $ehLoginCorreto);
         }
-    }
+     }
     
-    public function Adminresenha(){
-        $this ->view->renderizar("adminresenha");
+    public function adminresenha(){
+        $this->view->renderizar("adminresenha");
     }
-    public function Admincadastro(){
-        $this ->view->renderizar("admincadastro");
+    public function admincadastro(){
+        $this->view->renderizar("admincadastro");
     }
-    public function Adminnotica(){
-        $this ->view->renderizar("adminotica");
+    public function adminposta(){
+        $this->view->renderizar("adminposta");
     }
     
     public function admincomentario(){
@@ -47,7 +47,6 @@ class LoginController extends Controller{
         $todosComt = $p->getComentarios();
         $this->view->interpolar("admincomentario",$todosComt);
     }
-   
     
 }
 

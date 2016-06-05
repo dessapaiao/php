@@ -6,11 +6,11 @@
 		<title>Área do Administrador</title>
 		<meta name="generator" content="Bootply" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-		<link href="/css/bootstrap.min.css" rel="stylesheet">
+		<link href="/mvc/css/bootstrap.min.css" rel="stylesheet">
 		<!--[if lt IE 9]>
 			<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
 		<![endif]-->
-		<link href="css/styles.css" rel="stylesheet">
+		<link href="/mvc/css/styles.css" rel="stylesheet">
 	</head>
 	<body>
 <!-- header -->
@@ -63,9 +63,6 @@
                 <li><a href="#"> Comentários</a></li>
             </ul>
 
-           
-           
-
         </div>
         <!-- /col-3 -->
         <div class="col-sm-9">
@@ -79,35 +76,48 @@
                 <div class="col-md-6">
                     <div class="panel panel-default">
                         <div class="panel-heading">
-                            <h4>comentarios</h4></div>
-                        <div class="panel-body">
-                            <div id="content">
-                            <?php
-                        foreach($dado as $comentario){
-                    	    echo "<div>";
-                    	    echo "Nome" ."<br>" ;
-                    	    echo " " . $comentario->getNome() . "<br>";
-                    	    echo "Email" ."<br>" ;
-                            echo " " . $comentario->getEmail() . "<br>";
-                            echo "Comentario" ."<br>" ;
-                            echo " " . $comentario->getComix() . "<br>";
-                    	    echo "</div>"."<br>";
-                                        	
-                                }
-                       ?>
-
+                            <div class="panel-title">
+                                
+                                <h4>Adicionar um novo usuario</h4>
+                            </div>
                         </div>
+                        <div class="panel-body">
+                            <form  action="/usuario/cadastroPosta" method="POST"  class="form form-vertical"/>
+                                <div class="control-group">
+                                    <label>Titulo </label>
+                                    <div class="controls">
+                                        <input type="text" name="tiulo" class="form-control" placeholder="Filme"/>
+                                    </div>
+                                </div>
+                                <div class="control-group">
+                                    <label>Data</label>
+                                    <div class="controls">
+                                        <input type="date" name="data"  class="form-control"/>
+                                         
+                                    </div>
+                                <div class="control-group">
+                                    <label>Conteúdo</label>
+                                    <div class="controls">
+                                        <input type="text" name="posti" class="form-control" placeholder="Digite aqui o conteúdo"/>
+                                </div>
+                                </div>
+                                 <div class="control-group">
+                                    <label>Autor do post</label>
+                                    <div class="controls">
+                                        <input type="text" name="autor" class="form-control" placeholder="autor"/>
+                                    </div>
+                                    </div>
+                                    <div class="control-group">
+                                    <label></label>
+                                    <div class="controls">
+                                    <input type="submit"  class="btn btn-primary" value="cadastrar"/>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <!--/panel content-->
                     </div>
-                
-
-                    
                     <!--/panel-->
-
-                </div>
-                <!--/col-span-6-->
-
-            </div>
-            <!--/row-->
 
         <!--/col-span-9-->
     </div>
