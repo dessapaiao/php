@@ -26,6 +26,18 @@ class NewsletterDAO{
         $newsletter= new Newsletter($id,$nome,$email);
         return $newsletter;
     }
+     public function getNewsletters(){
+        $mysqli = new mysqli("127.0.0.1", "paiao", "", "usuario");
+        $stmt = $mysqli->prepare("SELECT * FROM New");
+        $stmt->execute();
+        $arr = mysqli_fetch_all(mysqli_stmt_get_result($stmt));
+        $nes = array();
+        foreach($arr as $a){
+            $nes[] = new Newsletter($a[0],$a[1],$a[2]);
+        }
+        return $nes;
+    }
+    
 }
 
 ?>

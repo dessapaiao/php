@@ -47,6 +47,11 @@ class LoginController extends Controller{
         $todosComt = $p->getComentarios();
         $this->view->interpolar("admincomentario",$todosComt);
     }
+    public function adminnewsletter(){
+        $p = new NewsletterDAO();
+        $todosNes = $p->getNewsletters();
+        $this->view->interpolar("adminnewsletter",$todosNes);
+    }
     
 }
 

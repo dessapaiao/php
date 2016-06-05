@@ -6,11 +6,11 @@
 		<title>Área do Administrador</title>
 		<meta name="generator" content="Bootply" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-		<link href="mvc/css/bootstrap.min.css" rel="stylesheet">
+		<link href="/css/bootstrap.min.css" rel="stylesheet">
 		<!--[if lt IE 9]>
 			<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
 		<![endif]-->
-		<link href="mvc/css/styles.css" rel="stylesheet">
+		<link href="css/styles.css" rel="stylesheet">
 	</head>
 	<body>
 <!-- header -->
@@ -54,13 +54,13 @@
 
             <hr>
 
-            <a href="https://trabalho-php-paiao.c9users.io/login/admincomentario"><strong> Comentários</strong></a>
+            <a href="https://trabalho-php-paiao.c9users.io/login/admincomentario"><strong> Assinantes do Newsletter</strong></a>
 
             <hr>
 
             <ul class="nav nav-pills nav-stacked">
                 <li class="nav-header"></li>
-                <li><a href="#"> Comentários</a></li>
+                <li><a href="#"> Assinantes</a></li>
             </ul>
 
            
@@ -79,18 +79,16 @@
                 <div class="col-md-6">
                     <div class="panel panel-default">
                         <div class="panel-heading">
-                            <h4>comentarios</h4></div>
+                            <h4>assinantes</h4></div>
                         <div class="panel-body">
                             <div id="content">
                             <?php
-                        foreach($dado as $comentario){
+                        foreach($dado as $newsletter){
                     	    echo "<div>";
                     	    echo "Nome" ."<br>" ;
-                    	    echo " " . $comentario->getNome() . "<br>";
+                    	    echo " " . $newsletter->getNome() . "<br>";
                     	    echo "Email" ."<br>" ;
-                            echo " " . $comentario->getEmail() . "<br>";
-                            echo "Comentario" ."<br>" ;
-                            echo " " . $comentario->getComix() . "<br>";
+                            echo " " . $newsletter->getEmail() . "<br>";
                     	    echo "</div>"."<br>";
                                         	
                                 }
