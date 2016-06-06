@@ -28,7 +28,7 @@ class LoginController extends Controller{
             header("Location: /login/formulario");
         else{
             $_SESSION["_ID"] = $ehLoginCorreto;
-            header("Location: /usuario/admin/" . $ehLoginCorreto);
+            header("Location: /login/admin/" . $ehLoginCorreto);
         }
      }
     
@@ -58,6 +58,19 @@ class LoginController extends Controller{
         $this->view->interpolar("admincomentarios",$todosCmt);
     }
     
+    
+      public function admin(){
+        $id = $_GET["arg0"];
+        //PEGANDO DADOS DO MODEL
+        $userDao = new UsuarioDAO();
+        $usuario = $userDao->getUsuario($id);
+        // -----------------------------
+        // MANDANDO PARA VIEW
+        $dado["nome"] = $usuario->getNome();
+        $dado["login"] = $usuario->getLogin();
+        $this->view->interpolar("admin",$dado);
+        // ------------------------------
+    }
     
 }
 

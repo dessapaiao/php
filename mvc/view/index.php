@@ -35,7 +35,7 @@
         </div>
         
         <div id="sidebar">
-        <h1>Assine nosso newsletter é receba novidades</h1>
+        <h1>Assine nosso newsletter e fique por dentro de tudo relacionado ao mundo do cinema!</h1>
         <form action="/usuario/CadastroNew" method="POST">
             <input type="text" placeholder="Nome" name="nome"/>
             <input type="text" placeholder="E-mail" name="email"/>

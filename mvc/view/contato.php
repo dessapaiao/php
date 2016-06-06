@@ -27,29 +27,23 @@
     <div id="conteudo">
         <div id="content">
        	
-			</form>
-		</section>
+		
         </div>
         
         <div id="posts">
-        <div>
+        
         <h3>Contato </h3>
           <form action="/usuario/CadastroContato" method="POST">
-			<div>
-				<label>Nome:</label>
-				<input name="nome" type="text" id="nome" />
-			</div>
-			<div>
-				<label >Email:</label>
-				<input name="email" type="email" id="email" />
-			</div>
-			<div>
-				<label>Mensagem:</label>
-				<textarea name="mensagem" cols="40" rows="3" id="mensagem" ></textarea>
-			</div>	
-			<div id="result"></div>
+			
+				
+				<input name="nome" type="text" id="nome" placeholder="Nome"/><br>
+			
+			    <input name="email" type="email" id="email" placeholder="Email" /><br>
+			
+				<textarea name="mensagem" cols="40" rows="3" id="mensagem" placeholder="Digite aqui sua mensagem"></textarea> <br>
+			
 				<input type="submit" id="submit" value="Enviar Mensagem" />
-			</div>
+			
         	</div>
         
         <div id="sidebar">

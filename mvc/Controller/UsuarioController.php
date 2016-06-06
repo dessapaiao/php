@@ -1,19 +1,7 @@
 <?php
 
 class UsuarioController extends Controller{
-    
-     public function admin(){
-        $id = $_GET["arg0"];
-        //PEGANDO DADOS DO MODEL
-        $userDao = new UsuarioDAO();
-        $usuario = $userDao->getUsuario($id);
-        // -----------------------------
-        // MANDANDO PARA VIEW
-        $dado["nome"] = $usuario->getNome();
-        $dado["login"] = $usuario->getLogin();
-        $this->view->interpolar("admin",$dado);
-        // ------------------------------
-    }
+   
     
     public function cadastroUsuario(){
         //OBTEM DA VIEW

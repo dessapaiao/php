@@ -40,11 +40,11 @@
     <div class="row">
         <div class="col-sm-3">
             <!-- Left column -->
-            <a href="#"><strong><i></i> Ferramentas</strong></a>
+            <a href="#"><strong><i></i> Casdastrar</strong></a>
 
             <hr>
 
-               <ul class="nav nav-stacked">
+                 <ul class="nav nav-stacked">
                     <ul class="nav nav-stacked collapse in" id="userMenu">
                         <li class="active"><a href="https://trabalho-php-paiao.c9users.io/login/adminposta">Notícias</a></li>
                         <li><a href="https://trabalho-php-paiao.c9users.io/login/adminresenha">Resenha</a></li>
@@ -54,13 +54,22 @@
 
             <hr>
 
-            <a href="https://trabalho-php-paiao.c9users.io/login/admincomentario"><strong> Comentários</strong></a>
+            <a href=""><strong> Listar </strong></a>
 
             <hr>
+            <ul class="nav nav-pills nav-stacked">
+                <li class="nav-header"></li>
+                <li><a href="https://trabalho-php-paiao.c9users.io/login/admincomentarios"> Comentarios Noticia</a></li>
+            </ul>
+            
+            <ul class="nav nav-pills nav-stacked">
+                <li class="nav-header"></li>
+                <li><a href="https://trabalho-php-paiao.c9users.io/login/admincomentario"> Comentarios Resenha</a></li>
+            </ul>
 
             <ul class="nav nav-pills nav-stacked">
                 <li class="nav-header"></li>
-                <li><a href="https://trabalho-php-paiao.c9users.io/login/adminnewsletter"> newsletter </a></li>
+                <li><a href="https://trabalho-php-paiao.c9users.io/login/adminnewsletter"> Newsletter</a></li>
             </ul>
 
         </div>

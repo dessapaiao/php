@@ -14,8 +14,8 @@
 
 <div align="center">
 <ul class="snip1189">
-  <li><a href="#">Home</a></li>
-  <li><a href="https://trabalho-php-paiao.c9users.io/home/index">Sobre</a></li>
+  <li><a href="https://trabalho-php-paiao.c9users.io/home/index">Home</a></li>
+  <li><a href="https://trabalho-php-paiao.c9users.io/home/sobre">Sobre</a></li>
   <li class="current"><a href="#">Notícias</a></li>
   <li><a href="https://trabalho-php-paiao.c9users.io/home/resenha">Resenhas</a></li>
   <li><a href="https://trabalho-php-paiao.c9users.io/home/contato">Contato</a></li>
@@ -55,13 +55,15 @@
         ?>
     <h3>Deixe seu comentario</h3>
             <form action="/usuario/CadastroComent" method="POST" >
-                <label for="">Nome</label>
-                <input type="text" name="nome"/><br>
-                <label for="">Email</label>
-                <input type="text" name="email"/><br>
-                <label for="">Comentario</label>
-                <input type="textarea" name="coment"/>
-                <input type="submit" value="cadastrar"/>
+                
+                <input type="text" name="nome" placeholder="Nome"/><br>
+                
+                <input type="text" name="email" placeholder="Email"/><br>
+    
+                <textarea  name="coment"  name="comix" cols="22" rows="3" placeholder="Digite seu comentario"/></textarea><br>
+                
+                <input type="submit" value="Enviar"/>
+                
             </form>
     
        </div>
@@ -71,11 +73,11 @@
     <article>  <h1>Assine nosso newsletter e fique por dentro de tudo relacionado ao mundo do cinema!</h1><br>
         <form action="/usuario/CadastroNew" method="POST">
             <input type="text" placeholder="Nome" name="nome"/>
-            <input type="text" placeholder="E-mail" name="email"/><br>
+            <input type="text" placeholder="E-mail" name="email"/><br><br>
             <input type="submit" value="Assinar"/>
         </form></article>
     </div>
-</div>
+
     
 <div class="footer">
    <center>Fim do site</center> 
