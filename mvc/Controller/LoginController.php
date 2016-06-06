@@ -63,6 +63,12 @@ class LoginController extends Controller{
         $this->view->interpolar("admincontato",$todosCont);
     }
     
+    public function adminusuario(){
+        $us = new usuarioDAO();
+        $todosUsu = $us->getUsuarios();
+        $this->view->interpolar("adminusuario",$todosUsu);
+    }
+    
       public function admin(){
         $id = $_GET["arg0"];
         //PEGANDO DADOS DO MODEL
