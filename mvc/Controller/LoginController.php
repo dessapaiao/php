@@ -57,7 +57,11 @@ class LoginController extends Controller{
         $todosCmt = $e->getComentnews();
         $this->view->interpolar("admincomentarios",$todosCmt);
     }
-    
+    public function admincontato(){
+        $cd = new ContatoDAO();
+        $todosCont = $cd->getContatos();
+        $this->view->interpolar("admincontato",$todosCont);
+    }
     
       public function admin(){
         $id = $_GET["arg0"];

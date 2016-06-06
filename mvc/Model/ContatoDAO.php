@@ -28,6 +28,17 @@ class ContatoDAO{
         return $contato;
     }
     
+    public function getContatos(){
+        $mysqli = new mysqli("127.0.0.1", "paiao", "", "usuario");
+        $stmt = $mysqli->prepare("SELECT * FROM Contato");
+        $stmt->execute();
+        $arr = mysqli_fetch_all(mysqli_stmt_get_result($stmt));
+        $resd = array();
+        foreach($arr as $a){
+            $cont[] = new Contato($a[0],$a[1],$a[2],$a[3]);
+        }
+        return $cont;
+    }
    
 }
   
