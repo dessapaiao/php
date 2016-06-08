@@ -119,7 +119,6 @@ class UsuarioController extends Controller{
         $posti = $_POST["posti"];
         $data = $_POST["data"];
         $autor = $_POST["autor"];
-        
         //ignorar, pois, eh A_I
         $posta = new Posta(0,$tiulo, $posti, $data, $autor);
         $posDao = new PostaDAO();

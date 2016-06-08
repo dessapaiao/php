@@ -2,11 +2,14 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <html>
 <head>
+    <meta charset="UTF-8">
  <style>
+     
     <?php include "css/styleindex.css"; ?>
     </style>
     
     <title>Notícias</title>
+    
 
  </head>
  
@@ -24,35 +27,32 @@
 
 <div id="header">
 </div> 
-<div class="geral">
+
+
+<div id="geral">
     
     <div id="conteudo">
         
         <div id="posts">
-            
-        <article>
-        <?php
+            <article>
+             <?php
     foreach($dado as $post){
         echo "<div>";
-	    echo "<h1>";
-	    echo "Titulo" ."<br>" ;
-	    echo "</h1>";
+        echo "<h1>";
 	    echo " " . $post->getTiulo() . "<br>";
-	    echo "<h1>";
-	    echo "Resenha" ."<br>" ;
 	    echo "</h1>";
         echo " " . $post->getPosti() . "<br>";
-        echo "<h1>";
-        echo "Genero" ."<br>";
-        echo "</h1>";
+        echo "<h4>";
         echo " " . $post->getData() . "<br>";
-        echo "<h1>";
-        echo "Video" ."<br>";
-        echo "</h1>";
-        echo " " . $post->getAutor() . "<br>";
+        echo "</h4>";
+        echo "<h5>";
+        echo " Por " . $post->getAutor() . "<br>";
+        echo "<h5>";
 	    echo "</div>"."<br>";
         }
         ?>
+        
+        
     <h3>Deixe seu comentario</h3>
             <form action="/usuario/CadastroComent" method="POST" >
                 
@@ -65,26 +65,21 @@
                 <input type="submit" value="Enviar"/>
                 
             </form>
-    
+    </article>
        </div>
-      </article>
+      
 
     <div id="sidebar">
-    <article>  <h1>Assine nosso newsletter e fique por dentro de tudo relacionado ao mundo do cinema!</h1><br>
+    <article>  <h2>Assine nosso newsletter e fique por dentro de tudo relacionado ao mundo do cinema!</h2><br>
         <form action="/usuario/CadastroNew" method="POST">
             <input type="text" placeholder="Nome" name="nome"/>
             <input type="text" placeholder="E-mail" name="email"/><br><br>
             <input type="submit" value="Assinar"/>
         </form></article>
     </div>
-
-    
-<div class="footer">
-   <center>Fim do site</center> 
-</div>
     
 </div>
-
+</div>
 
  </body>
 </html>

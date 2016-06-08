@@ -43,6 +43,7 @@ class HomeController extends Controller{
         $this->view->interpolar("noticia",$todosPst);
     }
     
+    
 
     
 }

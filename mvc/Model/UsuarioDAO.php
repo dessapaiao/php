@@ -48,7 +48,7 @@ class UsuarioDAO{
     
         public function getUsuarios(){
         $mysqli = new mysqli("127.0.0.1", "paiao", "", "usuario");
-        $stmt = $mysqli->prepare("SELECT * FROM Coment");
+        $stmt = $mysqli->prepare("SELECT * FROM User");
         $stmt->execute();
         $arr = mysqli_fetch_all(mysqli_stmt_get_result($stmt));
         $resd = array();
@@ -57,6 +57,7 @@ class UsuarioDAO{
         }
         return $usu;
     }
+    
 }
 
 ?>

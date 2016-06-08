@@ -1,6 +1,11 @@
 * {margin:0; padding: 0;}
-html, body {
-	height:100%;
+html{ 
+    position: relative;
+    min-height: 100%;
+}
+
+body{
+  margin: 0 0 150px;
 }
 
 #header{
@@ -19,9 +24,15 @@ html, body {
   height: 500px;
 }
 
+#fundo{
+  background-color: #59d6e3;
+}
+
 #conteudo{
+  position: relative;
   width: 1000px;
   margin: 0 auto;
+  min-height:  100%;
 }
 
 #posts{
@@ -31,13 +42,6 @@ html, body {
   width: 650px;
 }
 
-.footer {
-	position:absolute;
-	bottom:0;
-	width:100%;
-	height: 150px;
-	background: #000;
-}
 
 article{
   margin-top:10px;
@@ -46,14 +50,18 @@ article{
   margin-right: 10px;
 }
 
-
-.geral {
+#geral {
 	min-height:100%;
 	position:relative;
-	margin: 0 auto;
 	width: 100%;
-	padding-bottom: 150px;
+}
 
+#footer{
+  position: relative;
+  height: 150px;
+  background-color: #000;
+  width: 100%;
+  bottom:0px;
 }
 
 body {
@@ -99,7 +107,7 @@ a{
   padding: 0.5em 0.8em;
   margin: 0.2em 0;
   display: block;
-  color: #e7d78d;
+  color: #fff;
   position: relative;
   text-decoration: none;
 }
@@ -144,7 +152,7 @@ a{
 
 h1{
   font-family: Arial;
-  color: #e7d78d;
-  font-size: 15px;
+  color: #FC5896;
+  font-size: 30px;
   letter-spacing: 1px;
 }

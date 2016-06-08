@@ -1,5 +1,7 @@
 <!DOCTYPE HTML>
 <head>
+    <meta charset="UTF-8">
+
 <link href="/mvc/css/stylewin.css" rel="stylesheet">
 </head>
 <body>

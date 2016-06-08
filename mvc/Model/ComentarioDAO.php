@@ -38,6 +38,13 @@ class ComentarioDAO{
         }
         return $comt;
     }
+    public function deleteItem($id) {
+        $delId = $id;
+        $sqlQuery = "DELETE FROM Coment";
+        $sqlQuery .= " WHERE id=$delId;";
+    
+        $result = $this->getDbManager () -> executeQuery ( $sqlQuery );
+        }
 }
 
 ?>

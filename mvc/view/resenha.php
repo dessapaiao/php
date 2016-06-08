@@ -2,6 +2,8 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <html>
 <head>
+   <meta charset="UTF-8">
+
  <style>
     <?php include "css/styleindex.css"; ?>
     </style>
@@ -25,8 +27,10 @@
 <div id="header">
 </div>    
 
+   <div class="geral">
     <div id="conteudo">
-        <div id="content">
+        <div id="posts">
+        <article>
         <?php
     foreach($dado as $resenha){
 	    echo "<div>";
@@ -43,9 +47,8 @@
 	    echo "</div>"."<br>";
         }
         ?>
-        </div>
+        </article>
         
-        <div id="posts">
         <div>
         <h3>Deixe seu comentario</h3>
             <form action="/usuario/cadastroComentario" method="POST" >
@@ -67,9 +70,11 @@
     </div>
     
     </div>
-    
+   
 
-    
+</div>
+
+    <footer>hiiiiiiiiiii</footer>
 
  </body>
 </html>

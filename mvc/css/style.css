@@ -37,7 +37,8 @@ header {
   z-index: 2;
 }
 
-header h1 {
+ h1 {
+  font-size:50px;
   padding: 10px 0 0 10px;
 }
 

@@ -22,7 +22,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <span class="navbar-brand" href="#">Área do Administrador, Bem vindo  <?= $dado["nome"] ?></span>
+            <span class="navbar-brand" href="#">Área do Administrador</span>
         </div>
         <div class="navbar-collapse collapse">
             <ul class="nav navbar-nav navbar-right">
@@ -66,6 +66,16 @@
                 <li class="nav-header"></li>
                 <li><a href="https://trabalho-php-paiao.c9users.io/login/admincomentario"> Comentarios Resenha</a></li>
             </ul>
+            <ul class="nav nav-pills nav-stacked">
+                <li class="nav-header"></li>
+                <li><a href="https://trabalho-php-paiao.c9users.io/login/adminusuario"> Usuario</a></li>
+            </ul>
+            
+            <ul class="nav nav-pills nav-stacked">
+                <li class="nav-header"></li>
+                <li><a href="https://trabalho-php-paiao.c9users.io/login/admincontato"> Contato</a></li>
+            </ul>
+            
 
             <ul class="nav nav-pills nav-stacked">
                 <li class="nav-header"></li>
@@ -86,64 +96,15 @@
                 <div class="col-md-6">
                     <div class="panel panel-default">
                         <div class="panel-heading">
-                            <h4>Cadastro de notícias</h4></div>
+                            <h4>informções do usuario</h4></div>
                         <div class="panel-body">
-                            <p>yzaz</p>
+                            <p>Voce está logado como  <?= $dado["nome"] ?></p>
                             <p></p>
                         </div>
                     </div>
                     
-                    <div class="panel panel-default">
-                        <div class="panel-heading">
-                            <div class="panel-title">
-                                
-                                <h4>Adicionar conteúdo</h4>
-                            </div>
-                        </div>
-                        <div class="panel-body">
-                            <form class="form form-vertical">
-                                <div class="control-group">
-                                    <label>Título</label>
-                                    <div class="controls">
-                                        <input type="text" class="form-control" placeholder="">
-                                    </div>
-                                </div>
-                                <div class="control-group">
-                                    <label>Texto</label>
-                                    <div class="controls">
-                                        <textarea class="form-control"></textarea>
-                                    </div>
-                                </div>
-                                <div class="control-group">
-                                    <label>Categoria</label>
-                                    <div class="controls">
-                                        <select class="form-control">
-                                            <option>opções</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class="control-group">
-                                    <label></label>
-                                    <div class="controls">
-                                        <button type="submit" class="btn btn-primary">
-                                            cadastrar
-                                        </button>
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
-                        <!--/panel content-->
-                    </div>
-                    <!--/panel-->
-
                     
-                    <!--/panel-->
-
-                </div>
-                <!--/col-span-6-->
-
-            </div>
-            <!--/row-->
+                                
 
         <!--/col-span-9-->
     </div>

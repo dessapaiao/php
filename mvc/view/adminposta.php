@@ -66,7 +66,15 @@
                 <li class="nav-header"></li>
                 <li><a href="https://trabalho-php-paiao.c9users.io/login/admincomentarios"> Comentarios Resenha</a></li>
             </ul>
-
+            <ul class="nav nav-pills nav-stacked">
+                <li class="nav-header"></li>
+                <li><a href="https://trabalho-php-paiao.c9users.io/login/adminusuario"> Usuario</a></li>
+            </ul>
+            
+            <ul class="nav nav-pills nav-stacked">
+                <li class="nav-header"></li>
+                <li><a href="https://trabalho-php-paiao.c9users.io/login/admincontato"> Contato</a></li>
+            </ul>
             <ul class="nav nav-pills nav-stacked">
                 <li class="nav-header"></li>
                 <li><a href="https://trabalho-php-paiao.c9users.io/login/adminnewsletter"> Newsletter</a></li>
@@ -87,7 +95,7 @@
                         <div class="panel-heading">
                             <div class="panel-title">
                                 
-                                <h4>Adicionar um novo usuario</h4>
+                                <h4>Adicionar uma noticia</h4>
                             </div>
                         </div>
                         <div class="panel-body">

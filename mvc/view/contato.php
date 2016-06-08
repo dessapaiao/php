@@ -24,13 +24,11 @@
 <div id="header">
 </div>    
 
+   <div class="geral">
     <div id="conteudo">
-        <div id="content">
-       	
-		
-        </div>
-        
         <div id="posts">
+    
+    <article>
         
         <h3>Contato </h3>
           <form action="/usuario/CadastroContato" method="POST">
@@ -44,13 +42,21 @@
 			
 				<input type="submit" id="submit" value="Enviar Mensagem" />
 			
+			
+			</article>
         	</div>
         
         <div id="sidebar">
     
         </div>
+
+     </div>
+ <div class="footer">
+   <center>Fim do site</center> 
+</div>   
+
     </div>
-    
+
 
 </body>
 </html>

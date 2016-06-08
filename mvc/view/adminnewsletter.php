@@ -10,7 +10,7 @@
 		<!--[if lt IE 9]>
 			<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
 		<![endif]-->
-		<link href="/mvccss/styles.css" rel="stylesheet">
+		<link href="/mvc/css/styles.css" rel="stylesheet">
 	</head>
 	<body>
 <!-- header -->
@@ -66,6 +66,16 @@
                 <li class="nav-header"></li>
                 <li><a href="https://trabalho-php-paiao.c9users.io/login/admincomentario"> Comentarios Resenha</a></li>
             </ul>
+            
+            <ul class="nav nav-pills nav-stacked">
+                <li class="nav-header"></li>
+                <li><a href="https://trabalho-php-paiao.c9users.io/login/adminusuario"> Usuario</a></li>
+            </ul>
+            
+            <ul class="nav nav-pills nav-stacked">
+                <li class="nav-header"></li>
+                <li><a href="https://trabalho-php-paiao.c9users.io/login/admincontato"> Contato</a></li>
+            </ul>
 
             <ul class="nav nav-pills nav-stacked">
                 <li class="nav-header"></li>
@@ -88,20 +98,22 @@
                             <h4>assinantes</h4></div>
                         <div class="panel-body">
                             <div id="content">
-                            <?php
+                             <?php 
                         foreach($dado as $newsletter){
                     	    echo "<div>";
                     	    echo "Nome" ."<br>" ;
                     	    echo " " . $newsletter->getNome() . "<br>";
                     	    echo "Email" ."<br>" ;
                             echo " " . $newsletter->getEmail() . "<br>";
-                    	    echo "</div>"."<br>";
+                            
+                    	    echo "</div>"."<br>"; 
                                         	
                                 }
-                       ?>
-
+                       ?> 
+                       
                         </div>
                     </div>
+                
                 
 
                     
@@ -110,9 +122,7 @@
                 </div>
                 <!--/col-span-6-->
 
-            </div>
-            <!--/row-->
-
+            
         <!--/col-span-9-->
     </div>
 </div>
