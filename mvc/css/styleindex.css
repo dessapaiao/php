@@ -16,7 +16,7 @@ body{
     width: 100%;
 }
 
-#sidebar{
+/*#sidebar{
   margin-top:20px;
   width: 330px;
   float: right;
@@ -24,9 +24,7 @@ body{
   height: 500px;
 }
 
-#fundo{
-  background-color: #59d6e3;
-}
+
 
 #conteudo{
   position: relative;
@@ -55,14 +53,8 @@ article{
 	position:relative;
 	width: 100%;
 }
+*/
 
-#footer{
-  position: relative;
-  height: 150px;
-  background-color: #000;
-  width: 100%;
-  bottom:0px;
-}
 
 body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;

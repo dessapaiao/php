@@ -33,86 +33,68 @@ class LoginController extends Controller{
      }
     
     public function adminresenha(){
-        if(!isset($_SESSION["_ID"]))
-             header("Location: /login/formulario");
-        else
-            $this->view->renderizar("adminresenha");
+        $this->estaAutorizado();
+        $this->view->renderizar("adminresenha");
         }    
     
     public function admincadastro(){
-        if(!isset($_SESSION["_ID"]))
-             header("Location: /login/formulario");
-        else
-            $this->view->renderizar("admincadastro");
+        $this->estaAutorizado();
+        $this->view->renderizar("admincadastro");
         }  
     
     public function adminposta(){
-        if(!isset($_SESSION["_ID"]))
-             header("Location: /login/formulario");
-        else
-            $this->view->renderizar("adminposta");
+        $this->estaAutorizado();
+        $this->view->renderizar("adminposta");
         } 
     
     public function admincomentario(){
-        if(!isset($_SESSION["_ID"]))
-             header("Location: /login/formulario");
-        else{
-            $p = new ComentarioDAO();
-            $todosComt = $p->getComentarios();
-            $this->view->interpolar("admincomentario",$todosComt);
+        $this->estaAutorizado();
+        $p = new ComentarioDAO();
+        $todosComt = $p->getComentarios();
+        $this->view->interpolar("admincomentario",$todosComt);
         } 
-    }
+    
     public function adminnewsletter(){
-        if(!isset($_SESSION["_ID"]))
-             header("Location: /login/formulario");
-        else{
-            $p = new NewsletterDAO();
-            $todosNes = $p->getNewsletters();
-            $this->view->interpolar("adminnewsletter",$todosNes);
-        } 
+        $this->estaAutorizado();
+        $p = new NewsletterDAO();
+        $todosNes = $p->getNewsletters();
+        $this->view->interpolar("adminnewsletter",$todosNes);
+        
     }
     public function admincontato(){
-        if(!isset($_SESSION["_ID"]))
-             header("Location: /login/formulario");
-        else{
-            $cd = new ContatoDAO();
-            $todosCont = $cd->getContatos();
-            $this->view->interpolar("admincontato",$todosCont);
-        } 
+        $this->estaAutorizado();
+        $cd = new ContatoDAO();
+        $todosCont = $cd->getContatos();
+        $this->view->interpolar("admincontato",$todosCont);
+         
     }
     public function adminusuario(){
-        if(!isset($_SESSION["_ID"]))
-             header("Location: /login/formulario");
-        else{
-            $us = new usuarioDAO();
-            $todosUsu = $us->getUsuarios();
-            $this->view->interpolar("adminusuario",$todosUsu);
-        }
-    }   
+        $this->estaAutorizado();
+        $us = new usuarioDAO();
+        $todosUsu = $us->getUsuarios();
+        $this->view->interpolar("adminusuario",$todosUsu);
+    }
+      
     
     public function admin(){
-        if(!isset($_SESSION["_ID"]))
-             header("Location: /login/formulario");
-        else{
-            $id = $_GET["arg0"];
-            //PEGANDO DADOS DO MODEL
-            $userDao = new UsuarioDAO();
-            $usuario = $userDao->getUsuario($id);
+        $this->estaAutorizado();
+        $id = $_GET["arg0"];
+        //PEGANDO DADOS DO MODEL
+        $userDao = new UsuarioDAO();
+        $usuario = $userDao->getUsuario($id);
             // -----------------------------
             // MANDANDO PARA VIEW
-            $dado["nome"] = $usuario->getNome();
-            $dado["login"] = $usuario->getLogin();
-            $this->view->interpolar("admin",$dado);
+        $dado["nome"] = $usuario->getNome();
+        $dado["login"] = $usuario->getLogin();
+        $this->view->interpolar("admin",$dado);
         }
     }
     public function admincomentarios(){
-        if(!isset($_SESSION["_ID"]))
-             header("Location: /login/formulario");
-        else{
-            $e = new ComentnewDao();
-            $todosCmt = $e->getComentnews();
-            $this->view->interpolar("admincomentarios",$todosCmt);
-            }   
+        $this->estaAutorizado();
+        $e = new ComentnewDao();
+        $todosCmt = $e->getComentnews();
+        $this->view->interpolar("admincomentarios",$todosCmt);
+              
         }
     
     

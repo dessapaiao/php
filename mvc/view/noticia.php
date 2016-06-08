@@ -39,16 +39,18 @@
     foreach($dado as $post){
         echo "<div>";
         echo "<h1>";
+        echo " " . $post->getData() . " |  ";
 	    echo " " . $post->getTiulo() . "<br>";
 	    echo "</h1>";
         echo " " . $post->getPosti() . "<br>";
         echo "<h4>";
-        echo " " . $post->getData() . "<br>";
-        echo "</h4>";
-        echo "<h5>";
-        echo " Por " . $post->getAutor() . "<br>";
-        echo "<h5>";
+        echo "<br>";
+        echo " Por " . $post->getAutor();
+        echo "        Deixe seu comentário";
+        echo "<h4>";
 	    echo "</div>"."<br>";
+        echo"<hr></hr>";
+        echo "<br>";
         }
         ?>
         
