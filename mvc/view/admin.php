@@ -96,7 +96,7 @@
                 <div class="col-md-6">
                     <div class="panel panel-default">
                         <div class="panel-heading">
-                            <h4>informções do usuario</h4></div>
+                            <h4>Informações do usuário</h4></div>
                         <div class="panel-body">
                             <p>Voce está logado como  <?= $dado["nome"] ?></p>
                             <p></p>

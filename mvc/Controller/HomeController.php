@@ -22,10 +22,9 @@ class HomeController extends Controller{
     }
     
     public function index(){
-        
-        $f = new PostaDAO();
-        $todosPst = $f->getPostas();
-        $this->view->interpolar("index",$todosPst);
+        $c = new PostaDAO();
+        $todosUlt = $c->getUltimas();
+        $this->view->interpolar("index",$todosUlt);
         require_once("view/footer.php");
     }
     

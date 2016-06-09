@@ -24,12 +24,12 @@
 
 				<div>
 					<img src="/mvc/css/imgs/icon pop.png"/>
-					<p><span>Santos, Brasil</p>
+					<p><a href="#">Twitter</a></p>
 				</div>
 
 				<div>
 					<img src="/mvc/css/imgs/icon film.png"/>
-					<p>+1 555 123456</p>
+					<p><a href="facebook.com/cinezine">Facebook</a></p>
 				</div>
 
 				<div>
@@ -43,16 +43,12 @@
 
 				<p class="footer-company-about">
 					<span>Sobre o site</span>
-Cinezine é um site brasileiro de entretenimento que aborda temas relacionados a cinema.
+Cinezine é um site brasileiro de entretenimento que aborda temas relacionados ao cinema.
 O site conta com diversos colaboradores e colunistas.				</p>
 
 				<div class="footer-icons">
 
-					<a href="#"><img src="/mvc/css/imgs/icon drin.png"/></a>
-					<a href="#"><img src="/mvc/css/imgs/icon drin.png"/></a>
-					<a href="#"><img src="/mvc/css/imgs/icon drin.png"/></a>
-					<a href="#"><img src="/mvc/css/imgs/icon drin.png"/></a>
-
+			
 				</div>
 
 			</div>

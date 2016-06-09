@@ -176,7 +176,7 @@ h1{
   margin-top: 30px;
   margin-left: 100px;
   width: 600px;
-  background: #f0ebd2;
+  background: #000;
   position: relative;
   height: auto;
   	border-bottom:8px solid #b96182; 
@@ -188,7 +188,7 @@ h1{
   margin-left: 600px;
   position: relative;
   width: 520px;
-  background: #f0ebd2;
+  background: #000;
   height: 200px;
   	border-bottom:8px solid #e7cc50; 
 

@@ -21,17 +21,10 @@
   <li><a href="https://trabalho-php-paiao.c9users.io/home/contato">Contato</a></li>
   <li><a href="https://trabalho-php-paiao.c9users.io/login/admin">admin</a></li>
 </ul> 
-</div>   
-
-<div id="header">
-</div> 
-
-
-<div id="unoticia">
-	<article>
-	<h5>Últimas notícias:</h5><br>
-	
-	<?php
+</div>
+ 
+ 
+ <?php
     foreach($dado as $post){
         echo "<div>";
         echo "<h1>";
@@ -46,11 +39,4 @@
 	    echo "</div>"."<br>";
         echo "<br>";
         }
-        ?>
-        </article>
-</div>
-
-<div id="uresenhas">
-	<h2>Últimas resenhas:</h2>
-</div>
- 
+    ?>

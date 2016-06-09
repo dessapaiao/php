@@ -24,9 +24,10 @@ class PostaDAO{
         $posta= new Posta($id, $tiulo, $posti, $data, $autor);
         return $posta;
     }
+    
     public function getPostas(){
         $mysqli = new mysqli("127.0.0.1", "paiao", "", "usuario");
-        $stmt = $mysqli->prepare("SELECT * FROM Post");
+        $stmt = $mysqli->prepare("SELECT * FROM Post ORDER BY id DESC");
         $stmt->execute();
         $arr = mysqli_fetch_all(mysqli_stmt_get_result($stmt));
         $pst = array();
@@ -34,6 +35,18 @@ class PostaDAO{
             $pst[] = new Posta($a[0],$a[1],$a[2],$a[3],$a[4]);
         }
         return $pst;
+    }
+    
+    public function getUltimas(){
+        $mysqli = new mysqli("127.0.0.1", "paiao", "", "usuario");
+        $stmt = $mysqli->prepare("SELECT * FROM Post ORDER BY id DESC LIMIT 3 ");
+        $stmt->execute();
+        $arr = mysqli_fetch_all(mysqli_stmt_get_result($stmt));
+        $ult = array();
+        foreach($arr as $a){
+            $ult[] = new Posta($a[0],$a[1],$a[2],$a[3],$a[4]);
+        }
+        return $ult;
     }
 }
 
