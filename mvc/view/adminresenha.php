@@ -116,7 +116,17 @@
                                 <div class="control-group">
                                     <label>Genero</label>
                                     <div class="controls">
-                                        <input type="text" name="tipo" class="form-control" placeholder="Genero"/>
+                                        <select type="text" name="tipo" class="form-control"/>
+                                            <option value="Ação">Ação</option>
+                    						<option value="Aventura">Aventura</option>
+                    						<option value="Comedia">Comedia</option>
+                    						<option value="Comedia Romantica">Comedia romantica</option>
+                    						<option value="Drama">Drama</option>
+                    						<option value="Fixão Centifica">Fixão Centifica</option>
+                    						<option value="Terror">Terror</option>
+                    						<option value="Romance">Romance</option>
+                    						<option value="Outros">Outros</option>
+				                        </select>
                                 </div>
                                 </div>
                                 <div class="control-group">

@@ -3,15 +3,16 @@
 <html>
 <head>
     <meta charset="UTF-8">
- <style>
-     
+     <style>
     <?php include "css/styleindex.css"; ?>
+    <?php include "css/form.css"; ?>
+    <?php include "css/footer.css"; ?>
     </style>
     
     <title>Notícias</title>
     
 
- </head>
+</head>
  
 <body>
 
@@ -22,20 +23,17 @@
   <li class="current"><a href="#">Notícias</a></li>
   <li><a href="https://trabalho-php-paiao.c9users.io/home/resenha">Resenhas</a></li>
   <li><a href="https://trabalho-php-paiao.c9users.io/home/contato">Contato</a></li>
+  <li><a href="https://trabalho-php-paiao.c9users.io/login/admin">admin</a></li>
+  
 </ul> 
 </div>  
 
 <div id="header">
 </div> 
 
-
-<div id="geral">
-    
-    <div id="conteudo">
-        
-        <div id="posts">
-            <article>
-             <?php
+<div id="posts">
+	
+    <?php
     foreach($dado as $post){
         echo "<div>";
         echo "<h1>";
@@ -43,45 +41,31 @@
 	    echo " " . $post->getTiulo() . "<br>";
 	    echo "</h1>";
         echo " " . $post->getPosti() . "<br>";
-        echo "<h4>";
         echo "<br>";
-        echo " Por " . $post->getAutor();
-        echo "        Deixe seu comentário";
         echo "<h4>";
+        echo " Por " . $post->getAutor();
+        echo "</h4>";
 	    echo "</div>"."<br>";
-        echo"<hr></hr>";
         echo "<br>";
         }
         ?>
         
-        
-    <h3>Deixe seu comentario</h3>
+     <br>  
+    <h3>Deixe seu comentário</h3><br>
             <form action="/usuario/CadastroComent" method="POST" >
                 
-                <input type="text" name="nome" placeholder="Nome"/><br>
+                <input type="text" size="30px" name="nome" placeholder="Nome"/><br>
                 
-                <input type="text" name="email" placeholder="Email"/><br>
+                <input type="text" size="30px" name="email" placeholder="Email"/><br>
     
-                <textarea  name="coment"  name="comix" cols="22" rows="3" placeholder="Digite seu comentario"/></textarea><br>
+                <textarea type="text" name="coment" cols="40" rows="8" placeholder="Digite seu comentario"/></textarea><br>
                 
                 <input type="submit" value="Enviar"/>
                 
             </form>
-    </article>
-       </div>
-      
 
-    <div id="sidebar">
-    <article>  <h2>Assine nosso newsletter e fique por dentro de tudo relacionado ao mundo do cinema!</h2><br>
-        <form action="/usuario/CadastroNew" method="POST">
-            <input type="text" placeholder="Nome" name="nome"/>
-            <input type="text" placeholder="E-mail" name="email"/><br><br>
-            <input type="submit" value="Assinar"/>
-        </form></article>
-    </div>
-    
-</div>
 </div>
 
- </body>
-</html>
+
+
+

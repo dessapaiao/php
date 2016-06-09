@@ -5,7 +5,7 @@
 <style>
         <?php include "css/style2.css"; ?>
         <?php include "css/styleindex.css"; ?>
-
+        <?php include "css/footer.css"; ?>
 </style>
         <title>Login</title>
     <meta charset="UTF-8">
@@ -19,7 +19,8 @@
             <li ><a href="https://trabalho-php-paiao.c9users.io/home/noticia">Notícias</a></li>
             <li><a href="https://trabalho-php-paiao.c9users.io/home/resenha">Resenhas</a></li>
             <li ><a href="https://trabalho-php-paiao.c9users.io/home/contato">Contato</a></li>
-            <li  class="current"><a href="https://trabalho-php-paiao.c9users.io/home/resenha">admim</a></li>
+            <li  class="current"><a href="https://trabalho-php-paiao.c9users.io/login/admin">admin</a></li>
+            
 
         </ul> 
         </div>

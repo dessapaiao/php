@@ -15,6 +15,7 @@ class LoginController extends Controller{
     public function formulario(){
         unset($_SESSION["_ID"]);
         $this->view->renderizar("login");
+        require_once("view/footer.php");
     }
     
      public function autenticar(){
@@ -74,7 +75,8 @@ class LoginController extends Controller{
         $todosUsu = $us->getUsuarios();
         $this->view->interpolar("adminusuario",$todosUsu);
     }
-      
+    
+    
     
     public function admin(){
         $this->estaAutorizado();
@@ -88,7 +90,7 @@ class LoginController extends Controller{
         $dado["login"] = $usuario->getLogin();
         $this->view->interpolar("admin",$dado);
         }
-    }
+    
     public function admincomentarios(){
         $this->estaAutorizado();
         $e = new ComentnewDao();

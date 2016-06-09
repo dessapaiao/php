@@ -6,6 +6,10 @@
 
  <style>
     <?php include "css/styleindex.css"; ?>
+        <?php include "css/form.css"; ?>
+
+        <?php include "css/footer.css"; ?>
+
     </style>
     
    <title>Resenhas</title>
@@ -21,6 +25,7 @@
   <li><a href="https://trabalho-php-paiao.c9users.io/home/noticia">Notícias</a></li>
   <li class="current"><a href="#">Resenhas</a></li>
   <li><a href="https://trabalho-php-paiao.c9users.io/home/contato">Contato</a></li>
+  <li><a href="https://trabalho-php-paiao.c9users.io/login/admin">admin</a></li>
 </ul> 
 </div>   
 
@@ -34,15 +39,21 @@
         <?php
     foreach($dado as $resenha){
 	    echo "<div>";
-	    echo "Titulo" ."<br>" ;
+        echo "<h1>";
 	    echo " " . $resenha->getNome() . "<br>";
-	    echo "Resenha" ."<br>" ;
-        echo " " . $resenha->getOpiniao() . "<br>";
-        echo "Genero" ."<br>";
+		echo "</h1>";
+		echo " " . $resenha->getOpiniao() . "<br>";
+		echo "<b>";
+        echo "Gênero" ."<br>";
+        echo "</b>";
         echo " " . $resenha->getTipo() . "<br>";
+        echo "<b>";
         echo "Video" ."<br>";
+        echo "</b>";
         echo " " . $resenha->getVideo() . "<br>";
+        echo "<b>";
         echo "Autor" ."<br>";
+		echo "</b>";
 	    echo " " . $resenha->getAutor() . " ";
 	    echo "</div>"."<br>";
         }
@@ -53,28 +64,24 @@
         <h3>Deixe seu comentario</h3>
             <form action="/usuario/cadastroComentario" method="POST" >
                 
-                <input type="text" name="nome" placeholder="Nome"/><br>
+                <input type="text" size="30px" name="nome" placeholder="Nome"/><br>
                 
-                <input type="text" name="email" placeholder="E-mail"/><br>
+                <input type="text" size="30px" name="email" placeholder="E-mail"/><br>
                 
-                <input type="textarea" name="comix" cols="40" rows="3" placeholder="Digite seu comentario"/>
+                <input type="textarea" size="30px" name="comix" cols="40" rows="8" placeholder="Digite seu comentario"/>
                 
                 <input type="submit" value="Enviar"/>
             </form>
         
         </div>
         </div>
-        
-        <div id="sidebar">
-    
-    </div>
+   
     
     </div>
    
 
 </div>
 
-    <footer>hiiiiiiiiiii</footer>
-
+    
  </body>
 </html>

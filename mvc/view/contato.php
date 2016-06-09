@@ -2,8 +2,10 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <html>
 <head>
- <style>
+    <style>
     <?php include "css/styleindex.css"; ?>
+    <?php include "css/form.css"; ?>
+    <?php include "css/footer.css"; ?>
     </style>
     
   
@@ -18,6 +20,7 @@
   <li ><a href="https://trabalho-php-paiao.c9users.io/home/noticia">Notícias</a></li>
   <li><a href="https://trabalho-php-paiao.c9users.io/home/resenha">Resenhas</a></li>
   <li class="current"><a href="#">Contato</a></li>
+  <li><a href="https://trabalho-php-paiao.c9users.io/login/admin">admin</a></li>
 </ul> 
 </div>   
 
@@ -30,33 +33,23 @@
     
     <article>
         
-        <h3>Contato </h3>
+        <h3>Contato </h3><br>
           <form action="/usuario/CadastroContato" method="POST">
 			
 				
-				<input name="nome" type="text" id="nome" placeholder="Nome"/><br>
+				<input name="nome" type="text" id="nome" size="50" placeholder="Nome"/><br>
 			
-			    <input name="email" type="email" id="email" placeholder="Email" /><br>
+			    <input name="email" type="email" id="email" size="50" placeholder="Email" /><br>
 			
-				<textarea name="mensagem" cols="40" rows="3" id="mensagem" placeholder="Digite aqui sua mensagem"></textarea> <br>
+				<textarea name="mensagem" cols="60" rows="10" id="mensagem" placeholder="Digite aqui sua mensagem"></textarea> <br>
 			
 				<input type="submit" id="submit" value="Enviar Mensagem" />
 			
-			
+			</div>
 			</article>
         	</div>
-        
-        <div id="sidebar">
-    
-        </div>
-
-     </div>
- <div class="footer">
-   <center>Fim do site</center> 
-</div>   
-
-    </div>
-
+               </div>
+     
 
 </body>
 </html>

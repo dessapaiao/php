@@ -1,11 +1,13 @@
-* {margin:0; padding: 0;}
+* {
+  margin:0; 
+  padding: 0;
+  
+}
+
+
 html{ 
     position: relative;
     min-height: 100%;
-}
-
-body{
-  margin: 0 0 150px;
 }
 
 #header{
@@ -16,45 +18,12 @@ body{
     width: 100%;
 }
 
-/*#sidebar{
-  margin-top:20px;
-  width: 330px;
-  float: right;
-  background-color: #222222;
-  height: 500px;
-}
-
-
-
-#conteudo{
-  position: relative;
-  width: 1000px;
-  margin: 0 auto;
-  min-height:  100%;
-}
 
 #posts{
-  margin-top:20px;
-  float: left;
-  background-color: #222222;
-  width: 650px;
+  position: relative;
+  width: 950px;
+  margin: 50px auto;
 }
-
-
-article{
-  margin-top:10px;
-  margin-left:10px;
-  margin-bottom: 10px;
-  margin-right: 10px;
-}
-
-#geral {
-	min-height:100%;
-	position:relative;
-	width: 100%;
-}
-*/
-
 
 body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -67,11 +36,11 @@ body {
 ul, li{
   display: inline;
   font: Arial;
-  color: #e7d78d;
+  color: #f77baa;
 }
 
 a{
-  color:#e7d78d;
+  color:#f77baa;
   text-transform: uppercase;
   text-decoration: none;
 }
@@ -131,7 +100,7 @@ a{
 }
 .snip1189 a:hover,
 .snip1189 .current a {
-  color: #e7cc50;
+  color: #f77baa;
 }
 .snip1189 a:hover:before,
 .snip1189 .current a:before,
@@ -144,7 +113,89 @@ a{
 
 h1{
   font-family: Arial;
-  color: #FC5896;
+  color: #f77baa;
   font-size: 30px;
   letter-spacing: 1px;
 }
+
+
+		
+/* Botão */
+
+	input[type="reset"],
+	input[type="button"],
+	button,
+.button{
+		cursor: pointer;
+		margin-top: 10px;
+		display: inline-block;
+		font-size: 0.9em;
+		font-weight: 400;
+		height: 2.75em;
+		letter-spacing: 0.125em;
+		line-height: 2.75em;
+		padding: 0 2em;
+		text-align: center;
+		text-decoration: none;
+		text-indent: 0.125em;
+		text-transform: uppercase;
+		color: #999;
+		background-color: transparent;
+		border-radius: 4px;
+		border: 0;
+		box-shadow: inset 0 0 0 1px rgba(144, 144, 144, 0.5); /*kdof*/
+}
+
+	input[type="submit"],
+.button{
+		cursor: pointer;
+		margin-top: 10px;
+		display: inline-block;
+		font-size: 0.9em;
+		font-weight: 400;
+		height: 2.75em;
+		letter-spacing: 0.125em;
+		line-height: 2.75em;
+		padding: 0 2em;
+		text-align: center;
+		text-decoration: none;
+		text-indent: 0.125em;
+		text-transform: uppercase;
+		color: #fff;
+		background-color: #f77baa;
+		border-radius: 4px;
+		border: 0;
+		box-shadow: inset 0 0 0 1px #7d8184; 
+	
+}
+
+/***index***/
+
+
+#unoticia{
+  margin-top: 30px;
+  margin-left: 100px;
+  width: 600px;
+  background: #f0ebd2;
+  position: relative;
+  height: auto;
+  	border-bottom:8px solid #b96182; 
+
+}
+
+#uresenhas{
+  margin-top: -270px;
+  margin-left: 600px;
+  position: relative;
+  width: 520px;
+  background: #f0ebd2;
+  height: 200px;
+  	border-bottom:8px solid #e7cc50; 
+
+}
+
+b {
+  color: #f77baa;
+  background-color: #000;
+}
+

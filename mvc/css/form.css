@@ -1,0 +1,24 @@
+/** form **/
+
+	form {
+	}
+
+			form label {
+				display: block;
+			}
+
+			form input[type="text"],
+			form input[type="textarea"],
+			form input[type="email"],
+			form input[type="coment"],
+			form select,
+			form textarea {
+				display: block;
+				font-family: Arial;
+				padding: 0.65em 0.75em;
+				background: #fff;
+				border: solid 2px rgba(185,186,187,0.25);
+				color: #7d8184;
+				border-radius: 0.5em;
+				outline: none;
+			}

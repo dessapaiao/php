@@ -106,12 +106,13 @@
                             echo "Login" ."<br>" ;
                             echo " " . $usuario->getLogin() . "<br>";
                     	    echo "</div>"."<br>";
-                                        	
+                                      	
                                 }
                        ?>
 
                         </div>
                     </div>
+                   
                 
                 
 

@@ -25,32 +25,3 @@
 
 <div id="header">
 </div> 
-
-
-<div id="unoticia">
-	<article>
-	<h5>Últimas notícias:</h5><br>
-	
-	<?php
-    foreach($dado as $post){
-        echo "<div>";
-        echo "<h1>";
-        echo " " . $post->getData() . " |  ";
-	    echo " " . $post->getTiulo() . "<br>";
-	    echo "</h1>";
-        echo "<h4>";
-        echo "<br>";
-        echo " Por " . $post->getAutor();
-        echo "        Deixe seu comentário";
-        echo "<h4>";
-	    echo "</div>"."<br>";
-        echo "<br>";
-        }
-        ?>
-        </article>
-</div>
-
-<div id="uresenhas">
-	<h2>Últimas resenhas:</h2>
-</div>
- 
